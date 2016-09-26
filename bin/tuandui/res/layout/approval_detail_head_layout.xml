@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.lzx.iteam">
+    <RelativeLayout android:background="@color/white" android:paddingLeft="@dimen/event_margin_left" android:layout_width="fill_parent" android:layout_height="72.0dip">
+        <com.lzx.iteam.widget.RoundImageView android:id="@id/approval_head_iv" android:background="@drawable/team_icon" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_centerVertical="true" app:radius="25.0dip" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/approval_head_iv" android:layout_centerVertical="true">
+            <TextView android:textSize="@dimen/module_item_name" android:textStyle="bold" android:textColor="@color/event_name_bg" android:id="@id/approval_head_tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="土豆" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/module_item_time" android:textStyle="bold" android:textColor="@color/event_time_bg" android:id="@id/approval_head_tv_state" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="正在等待" />
+        </LinearLayout>
+        <ImageView android:id="@id/approval_head_iv_state" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginRight="14.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <View android:background="@color/line" android:layout_width="fill_parent" android:layout_height="0.6dip" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</LinearLayout>

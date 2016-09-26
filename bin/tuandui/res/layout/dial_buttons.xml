@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/dial_pad_under" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:btngrid="http://schemas.android.com/apk/res/com.lzx.iteam">
+    <com.lzx.iteam.widget.ButtonGridLinearLayout android:orientation="horizontal" android:tag="0" android:layout_width="fill_parent" android:layout_height="207.0dip" android:baselineAligned="false">
+        <com.lzx.iteam.widget.ButtonGridLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="3.0" btngrid:gap="0.0dip" btngrid:column="3" btngrid:row="4">
+            <com.lzx.iteam.widget.TextImageButton android:gravity="center_horizontal" android:id="@id/dial_btn_num_h_1" android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" android:soundEffectsEnabled="false" />
+            <com.lzx.iteam.widget.TextImageButton android:gravity="center_horizontal" android:id="@id/dial_btn_num_h_2" android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" android:soundEffectsEnabled="false" />
+            <com.lzx.iteam.widget.TextImageButton android:gravity="center_horizontal" android:id="@id/dial_btn_num_h_3" android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" android:soundEffectsEnabled="false" />
+            <com.lzx.iteam.widget.TextImageButton android:gravity="center_horizontal" android:id="@id/dial_btn_num_h_4" android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" android:soundEffectsEnabled="false" />
+            <com.lzx.iteam.widget.TextImageButton android:gravity="center_horizontal" android:id="@id/dial_btn_num_h_5" android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" android:soundEffectsEnabled="false" />
+            <com.lzx.iteam.widget.TextImageButton android:gravity="center_horizontal" android:id="@id/dial_btn_num_h_6" android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" android:soundEffectsEnabled="false" />
+            <com.lzx.iteam.widget.TextImageButton android:gravity="center_horizontal" android:id="@id/dial_btn_num_h_7" android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" android:soundEffectsEnabled="false" />
+            <com.lzx.iteam.widget.TextImageButton android:gravity="center_horizontal" android:id="@id/dial_btn_num_h_8" android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" android:soundEffectsEnabled="false" />
+            <com.lzx.iteam.widget.TextImageButton android:gravity="center_horizontal" android:id="@id/dial_btn_num_h_9" android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" android:soundEffectsEnabled="false" />
+            <com.lzx.iteam.widget.TextImageButton android:gravity="center_horizontal" android:id="@id/dial_btn_h_xing" android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" android:soundEffectsEnabled="false" />
+            <com.lzx.iteam.widget.TextImageButton android:gravity="center_horizontal" android:id="@id/dial_btn_num_h_0" android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" android:soundEffectsEnabled="false" />
+            <com.lzx.iteam.widget.TextImageButton android:gravity="center_horizontal" android:id="@id/dial_btn_h_delete" android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" android:soundEffectsEnabled="false" />
+        </com.lzx.iteam.widget.ButtonGridLayout>
+        <LinearLayout android:orientation="vertical" android:persistentDrawingCache="none" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <FrameLayout android:persistentDrawingCache="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <com.lzx.iteam.widget.TextImageButton android:gravity="center_horizontal" android:layout_gravity="center" android:id="@id/dial_btn_h_dial" android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:soundEffectsEnabled="false" />
+                <TextView android:textColor="#ffffffff" android:layout_gravity="bottom|center" android:id="@id/dial_btn_h_dial_text" android:paddingBottom="10.0dip" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textColor="#ffffffff" android:layout_gravity="center|top" android:id="@id/dial_btn_h_showarea" android:paddingTop="10.0dip" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </FrameLayout>
+            <FrameLayout android:persistentDrawingCache="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <com.lzx.iteam.widget.TextImageButton android:gravity="center_horizontal" android:layout_gravity="center" android:id="@id/dial_btn_h_send_msg" android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:soundEffectsEnabled="false" />
+                <TextView android:textColor="#ffffffff" android:layout_gravity="bottom|center" android:id="@id/dial_btn_h_send_msg_text" android:paddingBottom="10.0dip" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </FrameLayout>
+        </LinearLayout>
+    </com.lzx.iteam.widget.ButtonGridLinearLayout>
+</LinearLayout>

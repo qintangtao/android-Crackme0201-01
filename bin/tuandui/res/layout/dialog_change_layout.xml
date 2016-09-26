@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/dialog_content_bg" android:layout_width="300.0dip" android:layout_height="310.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip">
+        <TextView android:textSize="16.0sp" android:textColor="@color/blue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="请选择布局方式" android:layout_centerInParent="true" />
+        <Button android:id="@id/btn_exit" android:background="@drawable/edit_text_delete" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:background="@drawable/shape_wihte_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip">
+        <RelativeLayout android:gravity="center" android:id="@id/group_vertical" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <ImageView android:id="@id/head_label21" android:layout_width="66.0dip" android:layout_height="100.0dip" android:layout_marginLeft="15.0dip" android:src="@drawable/vasc_kb" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <TextView android:gravity="center_vertical" android:layout_gravity="center" android:id="@id/head_descr11" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:text="@string/on_screen_vertical" android:layout_toRightOf="@id/head_label21" android:layout_centerInParent="true" style="@style/StyleTextViewSetting" />
+            <RadioButton android:layout_gravity="center" android:id="@id/isSelRow6" android:clickable="false" android:layout_width="wrap_content" android:layout_height="50.0dip" android:layout_alignParentRight="true" android:layout_centerInParent="true" style="@style/custom_checkbox_setting" />
+        </RelativeLayout>
+        <View android:background="#ffdcdcdc" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+        <RelativeLayout android:gravity="center" android:id="@id/group_horizontal" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <ImageView android:id="@id/head_label22" android:layout_width="66.0dip" android:layout_height="100.0dip" android:layout_marginLeft="15.0dip" android:src="@drawable/ht9_kb" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <TextView android:gravity="center_vertical" android:layout_gravity="center" android:id="@id/head_descr21" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:text="@string/on_screen_horizaontal" android:layout_toRightOf="@id/head_label22" android:layout_centerInParent="true" style="@style/StyleTextViewSetting" />
+            <RadioButton android:layout_gravity="center" android:id="@id/isSelRow7" android:clickable="false" android:layout_width="wrap_content" android:layout_height="50.0dip" android:layout_alignParentRight="true" android:layout_centerInParent="true" style="@style/custom_checkbox_setting" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

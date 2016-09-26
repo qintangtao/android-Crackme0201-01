@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/dialog_content_bg" android:layout_width="270.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="@color/dialog_title" android:gravity="center" android:id="@id/tv_dialog_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="18.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="18.0dip" android:text="@string/umeng_socialize_send_btn_str" android:lineSpacingExtra="3.0dip" android:inputType="textMultiLine" />
+    <View android:background="@color/dialog_line" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="40.0dip">
+        <Button android:textSize="17.0sp" android:textColor="@color/dialog_btn" android:id="@id/btn_dialog1_confirm" android:background="@drawable/selector_dialog_one_button" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/ok" />
+    </LinearLayout>
+</LinearLayout>

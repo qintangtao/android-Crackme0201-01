@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="#b2000000" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/exit_chatgroup_layout" android:background="@drawable/dialog_content_bg" android:layout_width="270.0dip" android:layout_height="wrap_content">
+        <TextView android:textSize="17.0dip" android:textColor="@color/dialog_title" android:gravity="center_horizontal" android:id="@id/dialog_edit_msg" android:paddingTop="28.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginRight="30.0dip" android:text="此操作会删除该部门及其子部门,其中联系人不会被删除" />
+        <View android:background="@color/dialog_line" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+        <LinearLayout android:layout_gravity="bottom|center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="40.0dip">
+            <Button android:textSize="17.0sp" android:textColor="@color/dialog_btn" android:id="@id/edit_cancel_btn" android:background="@drawable/selector_dialog_left_button" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="取消" android:layout_weight="1.0" />
+            <View android:id="@id/middle_line" android:background="@color/dialog_line" android:layout_width="0.5dip" android:layout_height="fill_parent" />
+            <Button android:textSize="17.0sp" android:textColor="@color/dialog_btn" android:id="@id/edit_confirm_btn" android:background="@drawable/selector_dialog_right_button" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="确定" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

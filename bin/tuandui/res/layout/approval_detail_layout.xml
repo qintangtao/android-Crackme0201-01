@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/frag_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_title_bar" android:background="@color/title_bg" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <LinearLayout android:gravity="center" android:id="@id/approval_detaill_ll_back" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentLeft="true">
+            <ImageView android:background="@drawable/btn_back_selector" android:layout_width="10.0dip" android:layout_height="19.5dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/module_title" android:textColor="@color/white" android:id="@id/approval_detaill_tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="出差审批" android:layout_centerInParent="true" />
+        <LinearLayout android:gravity="center" android:visibility="gone" android:layout_width="50.0dip" android:layout_height="fill_parent" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/function_more" />
+        </LinearLayout>
+    </RelativeLayout>
+    <ScrollView android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/rl_title_bar" android:overScrollMode="never">
+        <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip">
+            <include layout="@layout/approval_detail_head_layout" />
+            <LinearLayout android:orientation="vertical" android:id="@id/event_active_detail" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_left_new" android:layout_marginRight="12.0dip" android:layout_below="@id/event_active_tv_title">
+                <LinearLayout android:orientation="horizontal" android:id="@id/ll_leave_type" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+                    <TextView android:textSize="15.0dip" android:textStyle="bold" android:textColor="@color/event_name_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="请假类型: " />
+                    <TextView android:textSize="15.0dip" android:textColor="@color/event_content_bg" android:id="@id/tv_leave_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="107.0dip" android:text="事假" android:textIsSelectable="true" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@id/ll_traval_place" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+                    <TextView android:textSize="15.0dip" android:textStyle="bold" android:textColor="@color/event_name_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="出差地点: " />
+                    <TextView android:textSize="15.0dip" android:textColor="@color/event_content_bg" android:id="@id/tv_traval_place" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="107.0dip" android:text="" android:textIsSelectable="true" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+                    <TextView android:textSize="15.0dip" android:textStyle="bold" android:textColor="@color/event_name_bg" android:id="@id/tv_start_time_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="开始时间: " />
+                    <TextView android:textSize="15.0dip" android:textColor="@color/event_content_bg" android:id="@id/tv_start_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2015年9月15日" android:textIsSelectable="true" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@id/ll_end_time" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+                    <TextView android:textSize="15.0dip" android:textStyle="bold" android:textColor="@color/event_name_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="结束时间: " />
+                    <TextView android:textSize="15.0dip" android:textColor="@color/event_content_bg" android:id="@id/tv_end_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="107.0dip" android:text="202222" android:textIsSelectable="true" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@id/ll_days" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+                    <TextView android:textSize="15.0dip" android:textStyle="bold" android:textColor="@color/event_name_bg" android:id="@id/tv_days_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="请假天数: " />
+                    <TextView android:textSize="15.0dip" android:textColor="@color/event_content_bg" android:id="@id/tv_days" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="107.0dip" android:text="一万年" android:textIsSelectable="true" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+                    <TextView android:textSize="15.0dip" android:textStyle="bold" android:textColor="@color/event_name_bg" android:id="@id/tv_reason_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="请假事由: " />
+                    <TextView android:textSize="15.0dip" android:textColor="@color/event_list_content" android:id="@id/tv_reason" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="世界这么大，我想回家睡觉" android:textIsSelectable="true" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@color/line" android:layout_width="fill_parent" android:layout_height="@dimen/line_height" android:layout_marginTop="14.0dip" />
+            <com.lzx.iteam.widget.MyListView android:id="@id/approval_detail_lv" android:background="@color/frag_bg" android:paddingBottom="100.0dip" android:divider="@null" style="@style/my_lv_style" />
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:orientation="vertical" android:id="@id/approval_detail_botton" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center" android:id="@id/approval_botton_revoke" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="45.0dip">
+            <TextView android:textSize="16.0dip" android:textStyle="bold" android:textColor="@color/click_blue" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text=" 撤销" android:drawableLeft="@drawable/approval_back_iv" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/approval_ll_action" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_alignParentBottom="true">
+            <LinearLayout android:gravity="center" android:id="@id/approval_botton_agree" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <TextView android:textSize="16.0dip" android:textStyle="bold" android:textColor="@color/click_blue" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text=" 同意" android:drawableLeft="@drawable/approval_agree_iv" />
+            </LinearLayout>
+            <View android:background="@color/ap_lv_line" android:layout_width="@dimen/line_height" android:layout_height="20.0dip" />
+            <LinearLayout android:gravity="center" android:id="@id/approval_botton_refuse" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <TextView android:textSize="16.0dip" android:textStyle="bold" android:textColor="@color/click_blue" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text=" 拒绝" android:drawableLeft="@drawable/approval_back_iv" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@color/line" android:layout_width="fill_parent" android:layout_height="@dimen/line_height" android:layout_above="@id/approval_detail_botton" />
+</RelativeLayout>

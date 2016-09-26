@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:id="@id/rl_groupfrag_titlebar" android:background="@color/title_bg" android:layout_width="fill_parent" android:layout_height="@dimen/title_bar_h"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/module_title" android:textColor="@color/white" android:id="@id/group_title_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/group" android:layout_centerInParent="true" />
+    <TextView android:textSize="@dimen/module_title" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/rl_group_add" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="11.5dip" android:text="发起群聊" android:layout_alignParentRight="true" />
+</RelativeLayout>

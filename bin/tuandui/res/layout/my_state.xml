@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/setting_activity" android:background="@drawable/repeat_bg" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/state_title_bar" android:background="@color/title_bg" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginBottom="10.0dip">
+        <Button android:textColor="@color/white" android:id="@id/state_setting_complete" android:background="@drawable/bulksms_blue_btn_sel" android:layout_width="60.0dip" android:layout_height="35.0dip" android:layout_marginLeft="5.0dip" android:text="@string/btn_back" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/black" android:gravity="center" android:id="@id/state_tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mystatus" android:layout_centerInParent="true" android:layout_centerVertical="true" />
+        <Button android:textSize="20.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/state_add" android:background="@drawable/bulksms_darkblue_btn_sel" android:layout_width="60.0dip" android:layout_height="35.0dip" android:layout_marginRight="5.0dip" android:text="+" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ListView android:id="@id/state_list" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:scrollbars="none" android:fadingEdge="none" android:fadingEdgeLength="0.0dip" android:persistentDrawingCache="none" android:alwaysDrawnWithCache="false" android:layout_width="fill_parent" android:layout_height="0.0dip" android:listSelector="@color/transbg" android:scrollingCache="false" android:dividerHeight="0.0dip" android:layout_weight="1.0" android:footerDividersEnabled="true" />
+</LinearLayout>

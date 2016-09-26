@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/my_talk_message_same_item" />
+    <RelativeLayout android:background="@color/talk_message_item_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="18.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="18.0dip">
+        <ImageView android:id="@id/talk_message_item_image" android:visibility="visible" android:layout_width="66.0dip" android:layout_height="66.0dip" android:src="@drawable/default_image" android:scaleType="centerCrop" />
+        <TextView android:textSize="@dimen/talk_content_text" android:textColor="@color/talk_item_content" android:ellipsize="end" android:id="@id/talk_message_item_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="8.0dip" android:text="ss：发表图片" android:singleLine="true" android:layout_toRightOf="@id/talk_message_item_image" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

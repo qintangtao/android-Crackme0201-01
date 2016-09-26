@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/group_item_selector" android:paddingTop="8.0dip" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip">
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/iv_event_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/event_img" />
+            <ImageView android:layout_gravity="right" android:id="@id/iv_event_red_new" android:visibility="gone" android:layout_width="10.0dip" android:layout_height="10.0dip" android:src="@drawable/red_dot" />
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip">
+                <TextView android:textSize="@dimen/module_title" android:textColor="@color/event_list_title" android:ellipsize="end" android:id="@id/tv_event_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="以梦想的名义裹挟梦想" android:singleLine="true" android:layout_toLeftOf="@id/tv_event_update_time" />
+                <TextView android:textSize="@dimen/module_item_time" android:textColor="@color/event_list_time" android:id="@id/tv_event_update_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="18:21" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+                <TextView android:textSize="@dimen/module_item_content" android:textColor="@color/event_list_content" android:ellipsize="end" android:id="@id/tv_event_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="的发挥发挥附近的哈开发的哈弗家会尽快辅导费哈好烦好烦好烦好烦好烦好烦好烦好烦好烦好烦和" android:maxLines="5" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_event_image_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.lzx.iteam.gridimg.MyGridView android:id="@id/event_list_item_gv_image" android:fadingEdge="none" android:layout_width="@dimen/talk_gv_w" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:listSelector="#00000000" android:cacheColorHint="#00000000" android:horizontalSpacing="@dimen/talk_gv_d" android:verticalSpacing="@dimen/talk_gv_d" android:numColumns="3" android:divider="@null" android:overScrollMode="never" />
+                <TextView android:textSize="@dimen/module_item_time" android:textColor="@color/event_list_time" android:id="@id/tv_event_image_count" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="共几张图片" />
+            </LinearLayout>
+            <RelativeLayout android:id="@id/rl_event_reply_layout" android:background="@drawable/duihuakuang" android:paddingTop="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+                <TextView android:textSize="@dimen/module_item_content" android:textColor="@color/event_list_reply" android:ellipsize="end" android:id="@id/tv_event_reply" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="xx：你好啊" android:singleLine="true" android:layout_toLeftOf="@id/ll_event_reply_count_layout" android:layout_alignParentLeft="true" />
+                <LinearLayout android:id="@id/ll_event_reply_count_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+                    <ImageView android:layout_width="16.0dip" android:layout_height="wrap_content" android:src="@drawable/event_iv_reply" />
+                    <TextView android:textSize="@dimen/module_item_content" android:textColor="@color/event_list_reply" android:id="@id/tv_event_reply_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="12条" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:layout_width="fill_parent" android:layout_height="0.20000005dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="9.0dip" android:layout_marginRight="15.0dip" android:src="@color/event_list_line" />
+    <LinearLayout android:layout_gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip">
+        <TextView android:textSize="@dimen/module_item_time" android:textColor="@color/event_list_content" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="查看详情" />
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/arrow_right_black" />
+    </LinearLayout>
+    <View android:background="@color/line" android:layout_width="fill_parent" android:layout_height="0.6dip" android:layout_marginTop="8.0dip" />
+</LinearLayout>

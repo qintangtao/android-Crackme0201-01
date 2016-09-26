@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/phone_num_item_container" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_width="0.0dip" android:layout_height="60.0dip" android:layout_weight="2.5">
+        <RelativeLayout android:gravity="center" android:id="@id/phone_item" android:background="@drawable/rect_item_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="16.0dip">
+            <TextView android:textSize="16.0dip" android:textColor="@color/black" android:ellipsize="end" android:id="@id/phone_num" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="\ 13811003554" android:maxLines="1" android:layout_alignParentLeft="true" />
+            <TextView android:textSize="12.0dip" android:textColor="#ff9d9d9d" android:ellipsize="end" android:id="@id/phone_label" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="移动电话（北京移动）" android:maxLines="1" android:layout_below="@id/phone_num" android:layout_alignParentLeft="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:id="@id/detail_ll_call" android:layout_width="0.0dip" android:layout_height="60.0dip" android:layout_weight="1.0">
+        <ImageView android:id="@id/call" android:padding="6.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/detail_call" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="60.0dip" android:layout_weight="1.0">
+        <ImageView android:id="@id/sms" android:background="@drawable/rect_item_bg" android:padding="6.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/detail_sms" />
+    </LinearLayout>
+    <RelativeLayout android:visibility="gone" android:layout_width="0.0dip" android:layout_height="60.0dip" android:layout_weight="1.0">
+        <RelativeLayout android:gravity="center" android:orientation="vertical" android:id="@id/container_icon" android:background="@drawable/rect_item_bg" android:clickable="true" android:layout_width="60.0dip" android:layout_height="fill_parent">
+            <ImageView android:id="@id/iv_icon_view" android:clickable="false" android:layout_width="60.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginBottom="2.0dip" android:src="@drawable/fixed_line" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="11.0sp" android:textColor="#ff005ca4" android:id="@id/icon_text" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/guhua_call" android:layout_below="@id/iv_icon_view" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

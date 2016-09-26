@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/ap_show_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_title_bar" android:background="@color/title_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <LinearLayout android:gravity="center" android:id="@id/approval_complete_ll_back" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentLeft="true">
+            <ImageView android:background="@drawable/btn_back_selector" android:layout_width="10.0dip" android:layout_height="19.5dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/module_title" android:textColor="@color/white" android:id="@id/approval_complete_tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="审批记录" android:layout_centerInParent="true" />
+        <LinearLayout android:gravity="center" android:visibility="gone" android:layout_width="50.0dip" android:layout_height="fill_parent" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/function_more" />
+        </LinearLayout>
+    </RelativeLayout>
+    <ListView android:id="@id/ap_fg_item_iv" android:visibility="visible" android:layout_marginBottom="50.0dip" android:divider="@null" style="@style/my_listview_style" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ap_complete_null" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ap_complete_null" />
+        <TextView android:textSize="16.0dip" android:textColor="@color/namecard_note" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:text="暂时没有内容" />
+    </LinearLayout>
+</LinearLayout>

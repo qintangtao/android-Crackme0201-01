@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingLeft="15.0dip" android:layout_width="fill_parent" android:layout_height="70.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/ap_fg_item_iv" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/approval_leave_iv" android:layout_centerVertical="true" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="70.0dip" android:layout_marginLeft="20.0dip" android:layout_toRightOf="@id/ap_fg_item_iv">
+        <TextView android:textSize="15.0dip" android:textColor="@color/schedule_content" android:id="@id/ap_tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="XXX的申请" />
+        <TextView android:textSize="15.0dip" android:textColor="@color/namecard_note" android:id="@id/ap_tv_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="已通过" />
+    </LinearLayout>
+    <LinearLayout android:gravity="right" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <TextView android:textSize="12.0dip" android:textColor="@color/namecard_note" android:id="@id/ap_tv_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2016_4_12" />
+        <ImageView android:id="@id/ap_iv_wait" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:src="@drawable/ap_wait_clock" />
+    </LinearLayout>
+    <View android:background="@color/ap_lv_line" android:layout_width="fill_parent" android:layout_height="@dimen/line_height" android:layout_alignParentBottom="true" />
+</RelativeLayout>

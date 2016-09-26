@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BarTitleColor</key>
+	<array>
+		<integer>0</integer>
+		<integer>0</integer>
+		<integer>0</integer>
+	</array>
+	<key>ContrastColor</key>
+	<array>
+		<integer>0</integer>
+		<integer>117</integer>
+		<integer>255</integer>
+	</array>
+	<key>JobTitleColor</key>
+	<array>
+		<integer>156</integer>
+		<integer>156</integer>
+		<integer>156</integer>
+	</array>
+	<key>ListBackgroundColor</key>
+	<array>
+		<integer>255</integer>
+		<integer>255</integer>
+		<integer>255</integer>
+	</array>
+	<key>NameColor</key>
+	<array>
+		<integer>0</integer>
+		<integer>0</integer>
+		<integer>0</integer>
+	</array>
+	<key>PhoneColor</key>
+	<array>
+		<integer>156</integer>
+		<integer>156</integer>
+		<integer>156</integer>
+	</array>
+	<key>SectionHeaderBackgroundColor</key>
+	<array>
+		<integer>249</integer>
+		<integer>249</integer>
+		<integer>249</integer>
+	</array>
+	<key>SeparatorColor</key>
+	<array>
+		<integer>204</integer>
+		<integer>204</integer>
+		<integer>204</integer>
+	</array>
+	<key>StatusBarStyle</key>
+	<integer>0</integer>
+	<key>ThemeName</key>
+	<string>system白色风格</string>
+	<key>TintColor</key>
+	<array>
+		<integer>245</integer>
+		<integer>245</integer>
+		<integer>247</integer>
+	</array>
+</dict>
+</plist>

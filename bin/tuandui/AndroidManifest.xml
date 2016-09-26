@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.lzx.iteam" platformBuildVersionCode="22" platformBuildVersionName="5.1.1-1819727">
+    <permission android:name="com.lzx.iteam.permission.JPUSH_MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.lzx.iteam.permission.JPUSH_MESSAGE"/>
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="com.lzx.iteam.permission.cloudcontactsprovider"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
+    <uses-permission android:name="com.lzx.iteam.permission.contactssearch"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.ACCESS_COAROCATION"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.WRITE_SMS"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.RESTART_PACKAGES"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <permission android:name="com.lzx.iteam.provider.cloudcontactsprovider" android:protectionLevel="normal"/>
+    <application android:debuggable="true" android:hardwareAccelerated="true" android:icon="@drawable/team_icon" android:label="@string/app_name" android:largeHeap="true" android:name=".DialerApp" android:persistent="true" android:theme="@style/app_theme">
+        <meta-data android:name="UMENG_APPKEY" android:value="55b1e3e467e58e8669001aee"/>
+        <meta-data android:name="BDAPPID" android:value="6987066"/>
+        <meta-data android:name="BDAPPKEY" android:value="3e4DZGaKqZ3aLqaIV3ZnTQjG"/>
+        <meta-data android:name="com.baidu.lbsapi.API_KEY" android:value="CIAQt0MFFCSqkqmF72PqITaLL6Ssx4kC"/>
+        <meta-data android:name="JPUSH_CHANNEL" android:value="developer-default"/>
+        <meta-data android:name="JPUSH_APPKEY" android:value="08a82bc7a3687c37b2b4c1b0"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:name=".MainActivity" android:screenOrientation="portrait" android:theme="@style/main_theme" android:windowSoftInputMode="stateAlwaysHidden|adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".BaseActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:name="CloudDialerActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".RegisterActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".AgreementActivity" android:process=":remote" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:name=".LoginActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name=".ForgetActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:label="皮肤超市" android:name=".SkinList" android:process=":remote" android:screenOrientation="portrait"/>
+        <activity android:name=".ContactDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".CloudContactDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".CreateGroupActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".ManageGroupActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".ChooseContactByTeamActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".UpdateGroupNameActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".ResetPswActivity"/>
+        <activity android:name=".dimensioncode.CaptureActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".ChatActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".SelectImageActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".TakePhotoActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".EditCloudActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:name=".SettingActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".EditMyCardActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:name=".BatchSendSmsActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".HelpActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".AskActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".ContactGroupDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".ResultActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".QrCodeAddActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".ImagePagerActivity" android:theme="@style/show_image_anim"/>
+        <activity android:name=".CustomEventActivity"/>
+        <activity android:name=".CodeResultActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".RegCodeActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".MyShareQrCodeActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".ManageModelActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".DraftsActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".CompanyCustomActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".FeedActivity" android:windowSoftInputMode="stateVisible"/>
+        <activity android:name=".MySettingActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".NameCardActivity" android:screenOrientation="landscape"/>
+        <activity android:name=".GuideActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".ChatGroupDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".CreateNewEventActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".EventDetailContentActivity"/>
+        <activity android:name=".EventReceiveMemberActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".AddContactByHandActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:name=".ContactsTalkDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".MyTalkMessageActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".SendTalkActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".TalkListActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".AlbumActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".ShowImagesActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".ImageFileActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".ContactNameCardActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".ScheduleCreateActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:name=".ScheduleDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".ScheduleManagerActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".ScheduleCalendarActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".AttendanceMainActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".AttendanceSelectWeekActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".BaiduMapActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".BaiduMapSearchActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".AttendanceCalendarActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name=".AttendanceCountActivity" android:screenOrientation="landscape"/>
+        <activity android:name=".AttendanceSettingActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".AttendanceCreateActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".AttendanceMemberActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".AttendanceManageActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".AttendanceDevicesActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".AttendanceDeviationActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".AttendanceDeviceErrorActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".AttendanceRulesActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".HorHelpActivity" android:screenOrientation="landscape"/>
+        <provider android:authorities="com.lzx.iteam.provider.cloudcontactsprovider" android:name=".provider.CloudContactsProvider" android:permission="com.lzx.iteam.permission.cloudcontactsprovider"/>
+        <service android:name=".contactssearch.conversion.NameConvertService">
+            <intent-filter>
+                <action android:name="com.lzx.iteam.contactssearch.NameConvertService.START"/>
+            </intent-filter>
+        </service>
+        <service android:name=".BatchSendSmsService"/>
+        <service android:name=".chat.ChatService">
+            <intent-filter>
+                <action android:name="com.lzx.iteam.action.ChatService"/>
+            </intent-filter>
+        </service>
+        <service android:enabled="true" android:name=".service.LocalService"/>
+        <service android:enabled="true" android:name=".service.ChatService" android:process=":background">
+            <intent-filter>
+                <action android:name="com.lzx.iteam.service.ChatService.INetService"/>
+            </intent-filter>
+        </service>
+        <service android:name=".service.CommonService" android:process=":background">
+            <intent-filter>
+                <action android:name="com.lzx.iteam.action.CommonService"/>
+            </intent-filter>
+        </service>
+        <receiver android:exported="false" android:name=".alarm.StartTimerReceiver"/>
+        <receiver android:exported="false" android:name=".alarm.AcceptWarnReceiver"/>
+        <service android:enabled="true" android:name=".alarm.AlarmService"/>
+        <receiver android:label=".service.NetPingManager" android:name=".service.NetPingManager" android:process=":background">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="true" android:exported="false" android:name="cn.jpush.android.service.PushService">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER"/>
+                <action android:name="cn.jpush.android.intent.REPORT"/>
+                <action android:name="cn.jpush.android.intent.PushService"/>
+                <action android:name="cn.jpush.android.intent.PUSH_TIME"/>
+            </intent-filter>
+        </service>
+        <receiver android:enabled="true" android:name="cn.jpush.android.service.PushReceiver">
+            <intent-filter android:priority="1000">
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY"/>
+                <category android:name="com.lzx.iteam"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:name="com.lzx.iteam.jpushutil.MyReceiver">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION"/>
+                <action android:name="cn.jpush.android.intent.UNREGISTRATION"/>
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED"/>
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED"/>
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED"/>
+                <action android:name="cn.jpush.android.intent.ACTION_RICHPUSH_CALLBACK"/>
+                <action android:name="cn.jpush.android.intent.CONNECTION"/>
+                <category android:name="com.lzx.iteam"/>
+            </intent-filter>
+        </receiver>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="cn.jpush.android.ui.PushActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="com.lzx.iteam"/>
+            </intent-filter>
+        </activity>
+        <service android:enabled="true" android:exported="false" android:name="cn.jpush.android.service.DownloadService"/>
+        <receiver android:name="cn.jpush.android.service.AlarmReceiver"/>
+        <activity android:configChanges="keyboard|orientation" android:launchMode="singleTask" android:name="com.umeng.socialize.view.ShareActivity" android:noHistory="true" android:theme="@style/Theme.UMDialog" android:windowSoftInputMode="adjustResize|stateVisible"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:name=".wxapi.WXEntryActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:exported="false" android:name="com.baidu.autoupdatesdk.ConfirmDialoigActivity" android:screenOrientation="sensor" android:theme="@style/bdp_update_dialog_style_fullscreen"/>
+        <receiver android:exported="false" android:name="com.baidu.autoupdatesdk.receiver.BDBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.baidu.autoupdatesdk.ACTION_NEW_UPDATE"/>
+                <action android:name="com.baidu.autoupdatesdk.ACTION_DOWNLOAD_COMPLETE"/>
+                <action android:name="com.baidu.autoupdatesdk.ACTION_NEW_AS"/>
+                <action android:name="com.baidu.autoupdatesdk.ACTION_AS_DOWNLOAD_COMPLETE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.lzx.iteam.widgetview.WidgetSetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="com.stone.action.clickset"/>
+                <action android:name="com.stone.action.clickset.item"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/set_widget_provider"/>
+        </receiver>
+        <service android:exported="false" android:name="com.lzx.iteam.widgetview.WidgetSetService" android:permission="android.permission.BIND_REMOTEVIEWS"/>
+        <activity android:name=".ApprovalActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".ApprovalCreateActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".ApprovalDetailActivity" android:screenOrientation="portrait"/>
+        <service android:exported="false" android:name="com.qihoo.appstore.updatelib.CheckUpdateService"/>
+        <activity android:exported="false" android:name="com.qihoo.appstore.updatelib.CheckUpdateAcitivty" android:theme="@android:style/Theme.Translucent"/>
+        <service android:enabled="true" android:name="com.baidu.location.f" android:process=":remote"/>
+    </application>
+</manifest>

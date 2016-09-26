@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="center_vertical" android:padding="10.0dip" android:layout_width="58.0dip" android:layout_height="58.0dip">
+        <ImageView android:id="@id/talk_detail_comment_user_img" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/default_cloud_image" />
+        <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/mask" />
+    </FrameLayout>
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/talk_content_text" android:textColor="@color/talk_item_comment_name" android:id="@id/talk_detail_comment_user_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="张三" />
+            <TextView android:textSize="@dimen/talk_time_text1" android:textColor="@color/talk_item_time1" android:id="@id/talk_detail_comment_user_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="今天 15：45" android:layout_toRightOf="@id/talk_list_item_img" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/talk_content_text" android:textColor="@color/talk_item_comment_content" android:id="@id/talk_detail_comment_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="20.0dip" android:text="你猜，你猜我猜不猜，你猜我猜你猜不猜" />
+    </LinearLayout>
+</LinearLayout>

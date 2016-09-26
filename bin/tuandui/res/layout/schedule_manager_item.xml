@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.lzx.iteam">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="60.0dip">
+        <com.lzx.iteam.widget.RoundImageView android:id="@id/iv_schedule_manager_image" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="12.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:scaleType="fitXY" android:layout_centerVertical="true" app:radius="20.0dip" />
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toLeftOf="@id/iv_schedule_manager_delete" android:layout_toRightOf="@id/iv_schedule_manager_image" android:layout_centerVertical="true">
+            <TextView android:textSize="@dimen/module_item_title" android:textColor="@color/schedule_content" android:ellipsize="end" android:id="@id/tv_schedule_manager_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="张三" android:maxEms="9" android:singleLine="true" android:layout_alignParentLeft="true" />
+            <TextView android:textSize="@dimen/module_item_content" android:textColor="@color/schedule_time" android:ellipsize="end" android:id="@id/tv_schedule_manager_position" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:text="总经理" android:singleLine="true" android:layout_alignParentLeft="true" />
+        </LinearLayout>
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_schedule_manager_delete" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:src="@drawable/schedule_manager_delete" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_ap_leader" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:src="@drawable/orange_right" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:id="@id/select_mask" android:background="@color/cloud_mask" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="60.0dip" />
+</RelativeLayout>

@@ -1,0 +1,42 @@
+XT882,motorola,com.hfx.twosim.motorola,http://plugin.yunlianxi.net/twosims/MotorolaTwoSim.apk,cdma
+XT800,motorola,com.hfx.twosim.motorola,http://plugin.yunlianxi.net/twosims/MotorolaTwoSim.apk,cdma
+XT800+,motorola,com.hfx.twosim.motorola,http://plugin.yunlianxi.net/twosims/MotorolaTwoSim.apk,cdma
+XT806lx,motorola,com.hfx.twosim.motorola,http://plugin.yunlianxi.net/twosims/MotorolaTwoSim.apk,cdma
+XT806,motorola,com.hfx.twosim.motorola,http://plugin.yunlianxi.net/twosims/MotorolaTwoSim.apk,cdma
+ME811,motorola,com.hfx.twosim.motorola,http://plugin.yunlianxi.net/twosims/MotorolaTwoSim.apk,cdma
+XT928,motorola,com.hfx.twosim.motorola,http://plugin.yunlianxi.net/twosims/MotorolaTwoSim.apk,cdma
+XT681,motorola,com.hfx.twosim.motorola,http://plugin.yunlianxi.net/twosims/MotorolaTwoSim.apk,cdma
+XT889,motorola,com.hfx.twosim.motorola,http://plugin.yunlianxi.net/twosims/MotorolaTwoSim.apk,cdma
+XT553,motorola,com.hfx.twosim.motorola,http://plugin.yunlianxi.net/twosims/MotorolaTwoSim.apk,cdma
+XT788,motorola,com.hfx.twosim.motorola,http://plugin.yunlianxi.net/twosims/MotorolaTwoSim.apk,cdma
+XT685,motorola,com.hfx.twosim.motorola,http://plugin.yunlianxi.net/twosims/MotorolaTwoSim.apk,wcdma
+XT885,motorola,com.hfx.twosim.motorola,http://plugin.yunlianxi.net/twosims/MotorolaTwoSim.apk,wcdma
+XT883,motorola,com.hfx.twosim.motorola,http://plugin.yunlianxi.net/twosims/MotorolaTwoSim.apk,wcdma
+XT550,motorola,com.hfx.twosim.motorola,http://plugin.yunlianxi.net/twosims/MotorolaTwoSim.apk,wcdma
+XT685,motorola,com.hfx.twosim.motorola,http://plugin.yunlianxi.net/twosims/MotorolaTwoSim.apk,wcdma
+XT390,motorola,com.hfx.twosim.motorola,http://plugin.yunlianxi.net/twosims/MotorolaTwoSim.apk,wcdma
+XT532,motorola,com.hfx.twosim.motorola,http://plugin.yunlianxi.net/twosims/MotorolaTwoSim.apk,wcdma
+SCH-I919,samsung,com.hfx.twosim.samsung,http://plugin.yunlianxi.net/twosims/SamsungTwoSim.apk,cdma
+SCH-I909,samsung,com.hfx.twosim.samsung,http://plugin.yunlianxi.net/twosims/SamsungTwoSim.apk,cdma
+SCH-W899,samsung,com.hfx.twosim.samsung,http://plugin.yunlianxi.net/twosims/SamsungTwoSim.apk,cdma
+SCH-W999,samsung,com.hfx.twosim.samsung,http://plugin.yunlianxi.net/twosims/SamsungTwoSim.apk,cdma
+SCH-W279,samsung,com.hfx.twosim.samsung,http://plugin.yunlianxi.net/twosims/SamsungTwoSim.apk,cdma
+SCH-W309,samsung,com.hfx.twosim.samsung,http://plugin.yunlianxi.net/twosims/SamsungTwoSim.apk,cdma
+SCH-W689,samsung,com.hfx.twosim.samsung,http://plugin.yunlianxi.net/twosims/SamsungTwoSim.apk,cdma
+SCH-I809,samsung,com.hfx.twosim.samsung,http://plugin.yunlianxi.net/twosims/SamsungTwoSim.apk,cdma
+SCH-W289,samsung,com.hfx.twosim.samsung,http://plugin.yunlianxi.net/twosims/SamsungTwoSim.apk,cdma
+SCH-W609/C,samsung,com.hfx.twosim.samsung,http://plugin.yunlianxi.net/twosims/SamsungTwoSim.apk,cdma
+SCH-I779,samsung,com.hfx.twosim.samsung,http://plugin.yunlianxi.net/twosims/SamsungTwoSim.apk,cdma
+GT-N7102,samsung,com.hfx.twosim.samsung,http://plugin.yunlianxi.net/twosims/SamsungTwoSim.apk,wcdma
+GT-S6102E,samsung,com.hfx.twosim.samsung,http://plugin.yunlianxi.net/twosims/SamsungTwoSim.apk,wcdma
+GT-B7722,samsung,com.hfx.twosim.samsung,http://plugin.yunlianxi.net/twosims/SamsungTwoSim.apk,wcdma
+GT-B7732,samsung,com.hfx.twosim.samsung,http://plugin.yunlianxi.net/twosims/SamsungTwoSim.apk,wcdma
+GT-S7562,samsung,com.hfx.twosim.samsung,http://plugin.yunlianxi.net/twosims/SamsungTwoSim.apk,wcdma
+HTC T328d,htc,com.hfx.twosim.htc,http://plugin.yunlianxi.net/twosims/HTCTwoSim.apk,cdma
+HTC T528d,htc,com.hfx.twosim.htc,http://plugin.yunlianxi.net/twosims/HTCTwoSim.apk,cdma
+HTC T328w,htc,com.hfx.twosim.htc,http://plugin.yunlianxi.net/twosims/HTCTwoSim.apk,wcdma
+HTC T528w,htc,com.hfx.twosim.htc,http://plugin.yunlianxi.net/twosims/HTCTwoSim.apk,wcdma
+HTC T328d,htc,com.hfx.twosim.htc,http://plugin.yunlianxi.net/twosims/HTCTwoSim.apk,cdma
+HTC X720d,htc,com.hfx.twosim.htc,http://plugin.yunlianxi.net/twosims/HTCTwoSim.apk,cdma
+HTC T329w,htc,com.hfx.twosim.htc,http://plugin.yunlianxi.net/twosims/HTCTwoSim.apk,wcdma
+SM-N9002,samsung,com.hfx.twosim.samsung,http://plugin.yunlianxi.net/twosims/SamsungTwoSim.apk,wcdma

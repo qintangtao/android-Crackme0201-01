@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="talk_gv_w">270.0dip</dimen>
+    <dimen name="talk_image_w">88.0dip</dimen>
+    <dimen name="talk_gv_d">3.0dip</dimen>
+</resources>

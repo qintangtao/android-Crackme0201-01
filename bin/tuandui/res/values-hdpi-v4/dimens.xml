@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="edit_photo_size">48.0dip</dimen>
+    <dimen name="tab_height">40.0dip</dimen>
+    <dimen name="container_mingpian_height">320.0dip</dimen>
+    <dimen name="gif_height">24.0dip</dimen>
+    <dimen name="gif_width">180.0dip</dimen>
+    <dimen name="gif_margin_top">-10.0dip</dimen>
+    <dimen name="title_margin_top">-23.0dip</dimen>
+    <dimen name="widget_height">240.0dip</dimen>
+    <dimen name="widget_width">150.0dip</dimen>
+    <dimen name="talk_gv_w">231.0dip</dimen>
+    <dimen name="talk_image_w">75.0dip</dimen>
+    <dimen name="talk_gv_d">3.0dip</dimen>
+    <dimen name="search_contact_item_padding">5.0dip</dimen>
+    <dimen name="dialog_contacts_data_list_item_label_margin_bottom">4.0dip</dimen>
+    <dimen name="item_contact_editor_add_field_set_padding_left">6.0dip</dimen>
+    <dimen name="item_contact_editor_add_field_set_padding_right">6.0dip</dimen>
+    <dimen name="item_contact_editor_add_field_set_padding_top">3.0dip</dimen>
+    <dimen name="item_contact_editor_add_field_margin_right">8.0dip</dimen>
+    <dimen name="btn_add_contact_font_size">42.0dip</dimen>
+    <dimen name="btn_setting_font_size">42.0dip</dimen>
+</resources>

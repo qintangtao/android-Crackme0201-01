@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/schedule_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/attendance_line" android:layout_width="fill_parent" android:layout_height="0.6dip" />
+    <RelativeLayout android:background="@color/white" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="49.0dip">
+        <TextView android:textSize="@dimen/schedule_main_content3" android:textColor="@color/schedule_content" android:id="@id/tv_attendance_create_list_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_right_black" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:background="@color/attendance_line" android:layout_width="fill_parent" android:layout_height="0.6dip" />
+    <RelativeLayout android:gravity="center_vertical" android:background="@color/white" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="54.0dip">
+        <TextView android:textSize="@dimen/schedule_main_content2" android:textColor="@color/schedule_content" android:id="@id/tv_attendance_create_list_work_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="工作日" />
+        <TextView android:textSize="@dimen/schedule_main_time1" android:textColor="@color/schedule_content" android:id="@id/tv_attendance_create_list_start_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="上班：10：00" android:layout_below="@id/tv_attendance_create_list_work_date" />
+        <TextView android:textSize="@dimen/schedule_main_time1" android:textColor="@color/schedule_content" android:id="@id/tv_attendance_create_list_end_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="70.0dip" android:layout_marginTop="8.0dip" android:text="下班：19：00" android:layout_toRightOf="@id/tv_attendance_create_list_start_time" android:layout_below="@id/tv_attendance_create_list_work_date" />
+    </RelativeLayout>
+    <View android:background="@color/attendance_line" android:layout_width="fill_parent" android:layout_height="0.6dip" />
+</LinearLayout>

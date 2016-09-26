@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:background="@color/title_bg" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <LinearLayout android:gravity="center" android:id="@id/ll_attendance_member_back" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentLeft="true">
+            <ImageView android:background="@drawable/btn_back_selector" android:layout_width="10.0dip" android:layout_height="19.5dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/module_title" android:textColor="@color/white" android:id="@id/tv_attendance_member_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="选择成员" android:layout_centerInParent="true" />
+        <TextView android:textSize="@dimen/module_title" android:textColor="@color/white" android:id="@id/tv_attendance_member_add" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="添加" android:includeFontPadding="false" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <View android:background="@color/schedule_line" android:layout_width="fill_parent" android:layout_height="@dimen/line_height" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_attendance_member_no_data" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:id="@id/iv_attendance_member_no_data" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/schedule_manager_no_data" />
+            <TextView android:textSize="16.0dip" android:textColor="@color/schedule_manager_no_data" android:gravity="center_horizontal" android:id="@id/tv_schedule_manager_no_data" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="还没有考勤成员" />
+        </LinearLayout>
+        <ListView android:id="@id/lv_attendance_member_list" android:background="@color/frag_bg" android:visibility="visible" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@null" android:cacheColorHint="@null" android:divider="@color/schedule_line1" android:dividerHeight="0.6dip" android:overScrollMode="never" />
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_attendance_member_manage" android:background="@color/frag_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:id="@id/rl_attendance_allow_change_device" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="49.0dip" android:layout_marginTop="15.0dip">
+                <TextView android:textSize="@dimen/schedule_main_content3" android:textStyle="bold" android:textColor="@color/schedule_content" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="17.0dip" android:text="允许更换设备" />
+                <ToggleButton android:layout_gravity="center_vertical" android:id="@id/tb_attendance_allow_change_device" android:background="@drawable/switch_green_btn" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="17.0dip" android:checked="true" android:button="@null" android:textOn="@null" android:textOff="@null" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <View android:background="@color/schedule_line1" android:layout_width="fill_parent" android:layout_height="0.6dip" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

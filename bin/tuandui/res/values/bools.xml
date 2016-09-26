@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="config_import_all_vcard_from_sdcard_automatically">false</bool>
+    <bool name="config_allow_users_select_all_vcard_import">false</bool>
+    <bool name="config_editor_field_order_primary">true</bool>
+</resources>

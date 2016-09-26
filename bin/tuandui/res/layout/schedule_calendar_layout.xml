@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/rl_schedule_calendar_title" android:background="@color/title_bg" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <LinearLayout android:gravity="center" android:id="@id/schedule_btn_back" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentLeft="true">
+            <ImageView android:background="@drawable/btn_back_selector" android:layout_width="10.0dip" android:layout_height="19.5dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/schedule_ll_help" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerInParent="true">
+            <TextView android:textSize="@dimen/module_title" android:textColor="@color/white" android:layout_gravity="center_vertical" android:id="@id/schedule_tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="日程表" />
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/schedule_iv_help" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/schedule_help" />
+        </LinearLayout>
+        <ImageView android:id="@id/schedule_iv_create" android:padding="8.0dip" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginRight="15.0dip" android:src="@drawable/schedule_add_iv" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/schedule_iv_manager" android:padding="8.0dip" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginRight="4.0dip" android:src="@drawable/schedule_manager_iv" android:layout_toLeftOf="@id/schedule_iv_create" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/module_title" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/tv_attendance_rules" android:padding="8.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="规则说明" android:layout_alignParentRight="true" />
+        <View android:background="@color/schedule_line" android:layout_width="fill_parent" android:layout_height="@dimen/line_height" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rl_schedule_calendar_date" android:background="@color/schedule_top_bg" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/rl_schedule_calendar_title">
+        <ImageView android:id="@id/calendar_iv_previous" android:padding="8.0dip" android:layout_width="35.0dip" android:layout_height="35.0dip" android:src="@drawable/calendar_left_iv" />
+        <ImageView android:id="@id/calendar_iv_next" android:padding="8.0dip" android:layout_width="35.0dip" android:layout_height="35.0dip" android:src="@drawable/calendar_right_iv" android:layout_alignParentRight="true" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <TextView android:textSize="@dimen/schedule_main_time1" android:textColor="@color/schedule_week" android:id="@id/calendar_tv_year" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2016" />
+            <TextView android:textSize="@dimen/schedule_main_time3" android:textColor="@color/schedule_week" android:gravity="center" android:id="@id/calendar_tv_month1" android:background="@drawable/date_bg_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:text="0" />
+            <TextView android:textSize="@dimen/schedule_main_time3" android:textColor="@color/schedule_week" android:gravity="center" android:id="@id/calendar_tv_month2" android:background="@drawable/date_bg_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="3" />
+            <TextView android:textSize="@dimen/schedule_main_time1" android:textColor="@color/schedule_week" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:text="月" />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:id="@id/ll_schedule_calendar_week" android:background="@color/schedule_top_bg" android:layout_width="fill_parent" android:layout_height="22.0dip" android:layout_below="@id/rl_schedule_calendar_date">
+        <TextView android:text="周日" style="@style/weekName" />
+        <TextView android:text="周一" style="@style/weekName" />
+        <TextView android:text="周二" style="@style/weekName" />
+        <TextView android:text="周三" style="@style/weekName" />
+        <TextView android:text="周四" style="@style/weekName" />
+        <TextView android:text="周五" style="@style/weekName" />
+        <TextView android:text="周六" style="@style/weekName" />
+    </LinearLayout>
+    <com.lzx.iteam.schedulecalendar.ScrollableLayout android:orientation="vertical" android:id="@id/calendar_scrollablelayout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/ll_attendance_send_appeal" android:layout_below="@id/ll_schedule_calendar_week">
+        <com.lzx.iteam.widget.CustomGridView android:id="@id/calentar_gridview" android:background="@color/schedule_line" android:clickable="true" android:clipChildren="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@null" android:verticalSpacing="0.6dip" android:stretchMode="columnWidth" android:columnWidth="55.0dip" android:numColumns="7" />
+        <View android:background="@color/schedule_line" android:layout_width="fill_parent" android:layout_height="@dimen/line_height" />
+        <TextView android:textSize="@dimen/schedule_main_time1" android:textColor="@color/schedule_day_bg" android:gravity="center_vertical" android:id="@id/calentar_tv_day" android:background="@color/schedule_bg" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="22.0dip" android:text="今天" />
+        <View android:background="@color/schedule_line" android:layout_width="fill_parent" android:layout_height="@dimen/line_height" />
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/calendar_ll_null" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="65.0dip" android:src="@drawable/calendar_null_iv" />
+            <TextView android:textSize="@dimen/schedule_main_time1" android:textColor="@color/schedule_day_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:text="今天还没有日程" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/attendance_ll_rest" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="65.0dip" android:src="@drawable/attendance_rest_img" />
+            <TextView android:textSize="@dimen/schedule_main_content2" android:textStyle="bold" android:textColor="@color/schedule_manager_no_data" android:id="@id/tv_attendance_no_data_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:text="放假了！" />
+        </LinearLayout>
+        <ListView android:id="@id/calendar_lv_content" android:background="@color/white" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="#00000000" android:divider="@color/schedule_line" android:dividerHeight="@dimen/line_height" android:layout_above="@id/ll_attendance_send_appeal" android:overScrollMode="never" />
+    </com.lzx.iteam.schedulecalendar.ScrollableLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="bottom" android:id="@id/ll_attendance_send_appeal" android:background="@drawable/bule_btn_seletor" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentBottom="true">
+        <TextView android:textSize="16.0dip" android:textStyle="bold" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="发起申诉" />
+    </LinearLayout>
+</RelativeLayout>

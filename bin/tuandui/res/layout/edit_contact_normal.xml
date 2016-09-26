@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/edit_ll_normal_layout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/edit_rl_image" android:background="@color/white" android:paddingLeft="15.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="80.0dip">
+        <TextView android:textSize="@dimen/edit_cloud_text" android:textColor="@color/edit_text" android:gravity="center_vertical" android:id="@id/edit_cloud_image" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="头像" />
+        <FrameLayout android:id="@id/edit_fl_image" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <ImageView android:id="@id/cloud_contact_photo" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/default_cloud_image" />
+            <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/mask" />
+        </FrameLayout>
+        <View android:background="@color/line" android:layout_width="fill_parent" android:layout_height="@dimen/line_height" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:paddingLeft="15.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/edit_ll_he">
+        <TextView android:textSize="@dimen/edit_cloud_text" android:textColor="@color/edit_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="姓名" />
+        <EditText android:textSize="@dimen/edit_cloud_note" android:textColor="@color/edit_text" android:textColorHint="@color/edit_hint" android:id="@id/cloud_contact_name" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip" android:hint="填写个人姓名" />
+    </LinearLayout>
+    <View android:background="@color/line" android:layout_width="fill_parent" android:layout_height="0.6dip" android:layout_marginLeft="14.0dip" />
+    <RelativeLayout android:id="@id/edit_rl_sex" android:background="@color/white" android:paddingLeft="15.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/edit_ll_he">
+        <TextView android:textSize="@dimen/edit_cloud_text" android:textColor="@color/edit_text" android:gravity="center_vertical" android:id="@id/edit_cloud_sex" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="性别" />
+        <TextView android:textSize="@dimen/edit_cloud_note" android:textColor="@color/edit_hint" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/edit_tv_sex" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip" android:text="选填" android:maxLines="1" android:layout_toLeftOf="@id/iv_sex_arrow" android:layout_toRightOf="@id/edit_cloud_sex" />
+        <ImageView android:id="@id/iv_sex_arrow" android:layout_width="10.0dip" android:layout_height="20.0dip" android:src="@drawable/selector_arrow_right" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <View android:background="@color/line" android:layout_width="fill_parent" android:layout_height="@dimen/line_height" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:paddingLeft="15.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/edit_ll_he">
+        <TextView android:textSize="@dimen/edit_cloud_text" android:textColor="@color/edit_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="公司" />
+        <EditText android:textSize="@dimen/edit_cloud_note" android:textColor="@color/edit_text" android:textColorHint="@color/edit_hint" android:id="@id/cloud_contact_company" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip" android:hint="选填" />
+    </LinearLayout>
+    <View android:background="@color/line" android:layout_width="fill_parent" android:layout_height="0.6dip" android:layout_marginLeft="14.0dip" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:paddingLeft="15.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/edit_ll_he">
+        <TextView android:textSize="@dimen/edit_cloud_text" android:textColor="@color/edit_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="职位" />
+        <EditText android:textSize="@dimen/edit_cloud_note" android:textColor="@color/edit_text" android:textColorHint="@color/edit_hint" android:id="@id/cloud_contact_position" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="20.0dip" android:text="" android:hint="选填" />
+    </LinearLayout>
+    <View android:background="@color/line" android:layout_width="fill_parent" android:layout_height="0.6dip" android:layout_marginLeft="14.0dip" />
+    <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:paddingLeft="15.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/edit_ll_he">
+        <TextView android:textSize="@dimen/edit_cloud_text" android:textColor="@color/edit_text" android:id="@id/tv_phone_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="电话" android:layout_centerVertical="true" />
+        <EditText android:textSize="@dimen/edit_cloud_note" android:textColor="@color/edit_text" android:textColorHint="@color/edit_hint" android:id="@id/cloud_contact_phone" android:background="@color/white" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip" android:hint="填写个人电话" android:layout_toLeftOf="@id/edit_tv_phone_note" android:layout_toRightOf="@id/tv_phone_text" android:inputType="phone" />
+        <TextView android:textSize="@dimen/edit_cloud_note" android:textColor="@color/edit_hint" android:id="@id/edit_tv_phone_note" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="注册号码不可修改" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/edit_ll_he" android:layout_marginLeft="14.0dip">
+        <TextView android:textSize="@dimen/edit_cloud_text" android:textColor="#ffb8b8b8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="电话" />
+        <EditText android:textSize="@dimen/edit_cloud_text" android:textColor="#ff000000" android:id="@id/cloud_contact_phone_second" android:background="@color/white" android:clickable="false" android:layout_width="150.0dip" android:layout_height="40.0dip" android:layout_marginLeft="20.0dip" android:inputType="phone" />
+    </LinearLayout>
+    <View android:background="@color/line" android:layout_width="fill_parent" android:layout_height="0.6dip" android:layout_marginLeft="14.0dip" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:paddingLeft="15.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/edit_ll_he">
+        <TextView android:textSize="@dimen/edit_cloud_text" android:textColor="@color/edit_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="邮箱" />
+        <EditText android:textSize="@dimen/edit_cloud_note" android:textColor="@color/edit_text" android:textColorHint="@color/edit_hint" android:id="@id/cloud_contact_email" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="20.0dip" android:hint="选填" />
+    </LinearLayout>
+    <View android:background="@color/line" android:layout_width="fill_parent" android:layout_height="0.6dip" android:layout_marginLeft="14.0dip" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:paddingLeft="15.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/edit_ll_he">
+        <TextView android:textSize="@dimen/edit_cloud_text" android:textColor="@color/edit_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="地址" />
+        <EditText android:textSize="@dimen/edit_cloud_note" android:textColor="@color/edit_text" android:textColorHint="@color/edit_hint" android:id="@id/cloud_contact_address" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:minHeight="40.0dip" android:hint="选填" />
+    </LinearLayout>
+    <View android:id="@id/line_edit_address" android:background="@color/line" android:layout_width="fill_parent" android:layout_height="0.6dip" android:layout_marginLeft="14.0dip" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_edit_contact_note" android:background="@color/white" android:paddingLeft="15.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/edit_ll_he">
+        <TextView android:textSize="@dimen/edit_cloud_text" android:textColor="@color/edit_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="个人信息" />
+        <EditText android:textSize="@dimen/edit_cloud_note" android:textColor="@color/edit_text" android:textColorHint="@color/edit_hint" android:id="@id/cloud_contact_note" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:hint="选填" />
+    </LinearLayout>
+    <View android:background="@color/line" android:layout_width="fill_parent" android:layout_height="0.6dip" />
+</LinearLayout>

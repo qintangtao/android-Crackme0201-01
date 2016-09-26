@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/group_item_selector" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center" android:layout_width="58.0dip" android:layout_height="58.0dip">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="5.0dip" android:layout_alignParentRight="true" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+            <ImageView android:id="@id/iv_grid_manager_img" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/default_cloud_image" android:scaleType="fitXY" android:adjustViewBounds="true" />
+            <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/iv_mask_gray_selector" />
+        </FrameLayout>
+        <ImageView android:id="@id/iv_grid_delete_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/delete" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <TextView android:textSize="14.0sp" android:textColor="@color/black" android:id="@id/tv_grid_manager_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:singleLine="true" />
+</LinearLayout>

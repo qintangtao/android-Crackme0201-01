@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:paddingLeft="10.0dip" android:paddingTop="@dimen/contact_detail_margin" android:paddingRight="10.0dip" android:paddingBottom="@dimen/contact_detail_margin" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/namecard_other_text" android:textColor="@color/namecard_text" android:id="@id/tv_contact_namecard_company" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="xxxx有限公司" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/contact_detail_margin">
+        <TextView android:textSize="@dimen/namecard_other_text" android:textColor="@color/namecard_note" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="姓名:" />
+        <TextView android:textSize="@dimen/namecard_other_text" android:textColor="@color/namecard_text" android:ellipsize="end" android:id="@id/tv_contact_namecard_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:singleLine="true" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/contact_detail_margin">
+        <TextView android:textSize="@dimen/namecard_other_text" android:textColor="@color/namecard_note" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="职位:" />
+        <TextView android:textSize="@dimen/namecard_other_text" android:textColor="@color/namecard_text" android:ellipsize="end" android:id="@id/tv_contact_namecard_position" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="资料未完善" android:singleLine="true" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/contact_detail_margin">
+        <TextView android:textSize="@dimen/namecard_other_text" android:textColor="@color/namecard_note" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="电话:" />
+        <TextView android:textSize="@dimen/namecard_other_text" android:textColor="@color/namecard_text" android:ellipsize="end" android:id="@id/tv_contact_namecard_phone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="资料未完善" android:singleLine="true" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/contact_detail_margin">
+        <TextView android:textSize="@dimen/namecard_other_text" android:textColor="@color/namecard_note" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="邮箱:" />
+        <TextView android:textSize="@dimen/namecard_other_text" android:textColor="@color/namecard_text" android:ellipsize="end" android:id="@id/tv_contact_namecard_email" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="资料未完善" android:singleLine="true" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/contact_detail_margin">
+        <TextView android:textSize="@dimen/namecard_other_text" android:textColor="@color/namecard_note" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="地址:" />
+        <TextView android:textSize="@dimen/namecard_other_text" android:textColor="@color/namecard_text" android:ellipsize="end" android:id="@id/tv_contact_namecard_address" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="资料未完善" android:lines="2" />
+    </LinearLayout>
+</LinearLayout>

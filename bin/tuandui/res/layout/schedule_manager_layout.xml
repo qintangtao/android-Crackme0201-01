@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_schedule_create_head" android:background="@color/title_bg" android:layout_width="fill_parent" android:layout_height="@dimen/title_bar_h" android:layout_alignParentTop="true">
+        <LinearLayout android:gravity="center" android:id="@id/ll_schedule_manager_back" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentLeft="true">
+            <ImageView android:background="@drawable/btn_back_selector" android:layout_width="10.0dip" android:layout_height="19.5dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/manager_ll_help" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerInParent="true">
+            <TextView android:textSize="@dimen/module_title" android:textColor="@color/white" android:layout_gravity="center_vertical" android:id="@id/manager_tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="日程管理员" />
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_schedule_manager_help" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/schedule_help" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/module_title" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/tv_schedule_manager_add" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="添加" android:includeFontPadding="false" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <View android:background="#ffbababa" android:layout_width="fill_parent" android:layout_height="0.8000001dip" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <FrameLayout android:id="@id/schedule_fl" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/rl_schedule_create_head">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_schedule_manager_no_data" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:id="@id/iv_schedule_manager_no_data" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/schedule_manager_no_data" />
+            <TextView android:textSize="16.0dip" android:textColor="@color/schedule_manager_no_data" android:gravity="center_horizontal" android:id="@id/tv_schedule_manager_no_data" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="还没有日程管理员" />
+        </LinearLayout>
+        <ListView android:id="@id/lv_schedule_manager_list" android:background="@color/frag_bg" android:visibility="visible" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@null" android:cacheColorHint="@null" android:divider="@color/schedule_line1" android:dividerHeight="0.6dip" android:overScrollMode="never" />
+    </FrameLayout>
+    <TextView android:textSize="13.0dip" android:textColor="@color/namecard_text" android:id="@id/approval_manager_notice" android:background="@color/frag_bg" android:padding="12.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="提示：审批人权限需要管理员的赋予，如果审批人不在列表中，请通知管理员。" android:drawableLeft="@drawable/event_iv_note" android:drawablePadding="4.0dip" android:layout_alignParentBottom="true" />
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center" android:paddingLeft="10.0dip" android:layout_width="330.0dip" android:layout_height="200.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/et_dialog_shape" android:layout_width="295.0dip" android:layout_height="172.0dip">
+            <TextView android:textSize="18.0sp" android:textColor="#ff000000" android:gravity="center" android:id="@id/tv_title" android:layout_width="270.0dip" android:layout_height="wrap_content" android:layout_marginTop="22.0dip" android:text="设置我的二维码名片" />
+            <LinearLayout android:background="@drawable/ettext_back" android:padding="10.0dip" android:layout_width="270.0dip" android:layout_height="45.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="10.0dip">
+                <EditText android:textSize="20.0sp" android:textColor="@color/Black" android:id="@id/et_content" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="请输入真实姓名" android:singleLine="true" />
+            </LinearLayout>
+            <View android:background="@color/listdivler" android:layout_width="293.0dip" android:layout_height="0.5dip" android:layout_marginLeft="2.0dip" android:layout_marginTop="15.0dip" />
+            <LinearLayout android:gravity="center" android:id="@id/tv_confirm" android:background="@drawable/et_dialog_bottom" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textSize="18.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="确定" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <Button android:layout_gravity="right" android:id="@id/btn_close" android:background="@drawable/selector_closedialog_button" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_marginTop="0.0dip" android:layout_marginRight="0.0dip" android:height="8.0dip" android:width="8.0dip" />
+</FrameLayout>

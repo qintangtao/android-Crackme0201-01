@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/globle_view" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/frag_container" android:background="#fff0eff5" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <View android:background="@color/group_list_driver" android:layout_width="fill_parent" android:layout_height="0.39999998dip" />
+        <LinearLayout android:id="@id/frag_tab_layout" android:background="@color/chat_input" android:paddingTop="2.0dip" android:paddingBottom="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/recent_layout" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                    <FrameLayout android:layout_gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="34.0dip">
+                        <ImageView android:layout_gravity="center_horizontal" android:id="@id/recent_image" android:layout_width="34.0dip" android:layout_height="34.0dip" android:src="@drawable/shijian_normal" />
+                        <TextView android:textSize="12.0sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/all_event_unread_msg" android:background="@drawable/unread_1" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="3" android:layout_centerVertical="true" />
+                    </FrameLayout>
+                    <TextView android:textSize="11.0sp" android:textColor="@color/gray" android:layout_gravity="center_horizontal" android:id="@id/recent_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/event" android:includeFontPadding="false" />
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/group_layout" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                    <FrameLayout android:layout_gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="34.0dip">
+                        <ImageView android:layout_gravity="center_horizontal" android:id="@id/group_image" android:layout_width="34.0dip" android:layout_height="34.0dip" android:src="@drawable/group_unselected" />
+                        <TextView android:textSize="12.0sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/all_chat_unread_msg" android:background="@drawable/unread_1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="3" android:layout_centerVertical="true" />
+                    </FrameLayout>
+                    <TextView android:textSize="11.0sp" android:textColor="@color/gray" android:layout_gravity="center_horizontal" android:id="@id/group_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/group" android:includeFontPadding="false" />
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/contacts_layout" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                    <ImageView android:layout_gravity="center_horizontal" android:id="@id/contacts_image" android:layout_width="34.0dip" android:layout_height="34.0dip" android:src="@drawable/contacts_unselected" />
+                    <TextView android:textSize="11.0sp" android:textColor="@color/gray" android:layout_gravity="center_horizontal" android:id="@id/contacts_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/contacts" android:includeFontPadding="false" />
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/function_layout" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                    <ImageView android:layout_gravity="center_horizontal" android:id="@id/function__image" android:layout_width="34.0dip" android:layout_height="34.0dip" android:src="@drawable/aboutme_unselected" />
+                    <TextView android:textSize="11.0sp" android:textColor="@color/gray" android:layout_gravity="center_horizontal" android:id="@id/function_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/aboutme" android:includeFontPadding="false" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_send_talk_layout" android:background="@color/frag_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_send_talk_titlebar" android:background="@color/title_bg" android:layout_width="fill_parent" android:layout_height="@dimen/title_bar_h">
+        <TextView android:textSize="@dimen/module_title" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_send_talk_cancle" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/cancel" android:layout_alignParentLeft="true" />
+        <TextView android:textSize="@dimen/module_title" android:textColor="@color/white" android:id="@id/tv_send_talk_title" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/send_talk" android:layout_centerInParent="true" />
+        <TextView android:textSize="@dimen/module_title" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_send_talk_ok" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/label_settting_comlete" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/rl_send_talk_titlebar">
+        <RelativeLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <EditText android:textSize="@dimen/talk_content_text" android:textColor="@color/black" android:textColorHint="@color/send_talk_hint" android:gravity="top" android:id="@id/et_send_talk_content" android:background="@null" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="200.0dip" android:hint="@string/send_talk_hint" />
+            <HorizontalScrollView android:id="@id/create_talk_h_scrollview" android:visibility="gone" android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="100.0dip" android:layout_margin="10.0dip" android:layout_below="@id/et_send_talk_content">
+                <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/create_talk_h_gallery" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </HorizontalScrollView>
+        </RelativeLayout>
+    </ScrollView>
+    <LinearLayout android:orientation="vertical" android:id="@id/create_talk_bottom_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <View android:background="@color/talk_item_divider_line" android:layout_width="fill_parent" android:layout_height="0.8000001dip" />
+        <LinearLayout android:orientation="horizontal" android:background="@color/chat_input" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/create_talk_emotion_select" android:layout_width="34.0dip" android:layout_height="34.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="4.0dip" android:layout_marginBottom="4.0dip" />
+            <ImageView android:id="@id/create_talk_image_select" android:background="@drawable/selector_send_image" android:layout_width="34.0dip" android:layout_height="34.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="4.0dip" android:layout_marginBottom="4.0dip" />
+        </LinearLayout>
+        <View android:background="@color/talk_item_divider_line" android:layout_width="fill_parent" android:layout_height="0.8000001dip" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/create_talk_ll_image" android:background="@color/chat_input" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="190.0dip">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="80.0dip" android:layout_weight="1.0">
+                <ImageView android:id="@id/create_talk_iv_image" android:layout_width="fill_parent" android:layout_height="50.0dip" android:src="@drawable/chat_more_image_selector" />
+                <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="图片" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="80.0dip" android:layout_weight="1.0">
+                <ImageView android:id="@id/create_talk_iv_photo" android:layout_width="fill_parent" android:layout_height="50.0dip" android:src="@drawable/chat_more_camera_selector" />
+                <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="相机" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_create_talk_emotion" android:background="@color/chat_input" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <android.support.v4.view.ViewPager android:layout_gravity="center" android:id="@id/create_talk_emotion_viewpager" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="170.0dip" />
+            <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/create_talk_emotion_dots_container" android:layout_width="fill_parent" android:layout_height="20.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:layout_gravity="center_vertical" android:background="@drawable/keyboardsetting_styleview_centersel" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="@color/allcontacts_number_text_color" android:gravity="center_vertical" android:id="@id/name" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="允许成员添加新人" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/StyleTextViewSetting" />
+    <ToggleButton android:layout_gravity="center_vertical" android:id="@id/setting_switch" android:background="@drawable/selector_switch" android:clickable="false" android:layout_width="70.0dip" android:layout_height="30.0dip" android:layout_marginRight="10.0dip" android:button="@null" android:textOn="@null" android:textOff="@null" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

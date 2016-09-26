@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="16.0dip">
+            <View android:background="@color/line" android:layout_width="fill_parent" android:layout_height="0.8000001dip" android:layout_marginLeft="14.0dip" android:layout_marginRight="14.0dip" android:layout_centerVertical="true" />
+            <TextView android:textSize="12.0dip" android:textColor="#ff999999" android:gravity="center" android:background="@color/white" android:layout_width="70.0dip" android:layout_height="fill_parent" android:text="分享" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="80.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="80.0dip" android:layout_marginBottom="20.0dip">
+            <ImageView android:id="@id/iv_share_friend" android:layout_width="@dimen/share_w_h" android:layout_height="@dimen/share_w_h" android:src="@drawable/share_friend" android:layout_alignParentLeft="true" />
+            <ImageView android:id="@id/iv_share_weixin" android:layout_width="@dimen/share_w_h" android:layout_height="@dimen/share_w_h" android:src="@drawable/share_weixin" android:layout_alignParentRight="true" />
+            <TextView android:textSize="12.0dip" android:textColor="#ff999999" android:gravity="center" android:layout_width="50.0dip" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="朋友圈" android:layout_below="@id/iv_share_friend" />
+            <TextView android:textSize="12.0dip" android:textColor="#ff999999" android:gravity="center" android:layout_width="50.0dip" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="微信好友" android:layout_below="@id/iv_share_friend" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

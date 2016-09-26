@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/footer" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerVertical="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/footer_body" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+        <TextView android:id="@id/footer_line" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="20.0dip" android:maxLines="1" />
+        <TextView android:textColor="#ff777777" android:id="@id/footer_match_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:maxLines="1" />
+        <TextView android:textColor="#ffaaaaaa" android:id="@id/footer_search_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:maxLines="2" />
+        <View android:background="@color/line" android:layout_width="fill_parent" android:layout_height="@dimen/line_height" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:id="@id/footer_ll_null" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="300.0dip">
+        <TextView android:textSize="18.0dip" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="无结果" />
+    </LinearLayout>
+</LinearLayout>

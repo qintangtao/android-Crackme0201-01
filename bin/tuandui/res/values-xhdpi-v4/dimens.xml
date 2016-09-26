@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="widget_height">240.0dip</dimen>
+    <dimen name="widget_width">160.0dip</dimen>
+    <dimen name="talk_gv_w">261.0dip</dimen>
+    <dimen name="talk_image_w">85.0dip</dimen>
+    <dimen name="talk_gv_d">3.0dip</dimen>
+</resources>

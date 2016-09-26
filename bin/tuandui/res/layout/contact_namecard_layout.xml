@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/frag_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_title_bar" android:background="@color/title_bg" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_weight="0.0">
+        <LinearLayout android:gravity="center" android:id="@id/ll_contact_namecard_btn_back" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentLeft="true">
+            <ImageView android:background="@drawable/btn_back_selector" android:layout_width="10.0dip" android:layout_height="19.5dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/module_title" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="联系人详情" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <RelativeLayout android:background="@color/title_bg" android:layout_width="fill_parent" android:layout_height="120.0dip">
+        <FrameLayout android:id="@id/fl_contact_namecard_image" android:layout_width="65.0dip" android:layout_height="65.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="10.0dip" android:layout_centerHorizontal="true">
+            <ImageView android:id="@id/iv_contact_namecard_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/default_cloud_image" />
+            <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/mask_bule" />
+            <ImageView android:id="@id/iv_contact_namecard_status" android:visibility="gone" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginLeft="33.0dip" android:layout_marginTop="33.0dip" android:src="@drawable/status_dot" />
+        </FrameLayout>
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_below="@id/fl_contact_namecard_image" android:layout_centerHorizontal="true">
+            <TextView android:textSize="@dimen/namecard_name_text" android:textStyle="bold" android:textColor="@color/white" android:id="@id/tv_contact_namecard_username" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_contact_namecard_sex" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginLeft="7.0dip" />
+        </LinearLayout>
+    </RelativeLayout>
+    <View android:background="@color/line" android:layout_width="fill_parent" android:layout_height="@dimen/line_height" />
+    <com.lzx.iteam.widget.HorizontalTabStrip android:id="@id/hts_namecard_category_strip" android:background="@color/white" android:paddingLeft="6.0dip" android:paddingRight="6.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="42.0dip" />
+    <TextView android:textSize="@dimen/namecard_other_text" android:textColor="@color/namecard_note" android:gravity="center" android:id="@id/tv_contact_namecard_have_no_team" android:background="@color/white" android:paddingLeft="6.0dip" android:paddingRight="6.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="45.0dip" android:text="未进入任何团队" />
+    <View android:background="@color/line" android:layout_width="fill_parent" android:layout_height="@dimen/line_height" />
+    <LinearLayout android:orientation="vertical" android:background="@color/frag_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <com.lzx.iteam.widget.WrapContentHeightViewPager android:id="@id/vp_namecard_viewpager" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <View android:background="@color/line" android:layout_width="fill_parent" android:layout_height="@dimen/line_height" />
+        <View android:background="@color/line" android:layout_width="fill_parent" android:layout_height="@dimen/line_height" android:layout_marginTop="15.0dip" />
+        <RelativeLayout android:id="@id/rl_contact_namecard_talk_img" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="72.0dip">
+            <TextView android:textSize="@dimen/detail_name_text" android:textColor="@color/namecard_note" android:id="@id/tv_contact_namecard_talk_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="个人空间" android:layout_centerVertical="true" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/ll_contact_namecard_talk_img" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="15.0dip" android:layout_toLeftOf="@id/iv_contact_namecard_talk_img_arrow" android:layout_toRightOf="@id/tv_contact_namecard_talk_img">
+                <ImageView android:id="@id/iv_contact_namecard_talk_img1" android:layout_width="0.0dip" android:layout_height="fill_parent" android:scaleType="centerCrop" android:layout_weight="1.0" />
+                <ImageView android:id="@id/iv_contact_namecard_talk_img2" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="7.0dip" android:scaleType="centerCrop" android:layout_weight="1.0" />
+                <ImageView android:id="@id/iv_contact_namecard_talk_img3" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="7.0dip" android:scaleType="centerCrop" android:layout_weight="1.0" />
+                <ImageView android:id="@id/iv_contact_namecard_talk_img4" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="7.0dip" android:scaleType="centerCrop" android:layout_weight="1.0" />
+            </LinearLayout>
+            <ImageView android:id="@id/iv_contact_namecard_talk_img_arrow" android:paddingLeft="5.0dip" android:layout_width="15.0dip" android:layout_height="20.0dip" android:layout_marginRight="14.0dip" android:src="@drawable/selector_arrow_right" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:background="@color/line" android:layout_width="fill_parent" android:layout_height="@dimen/line_height" android:layout_marginBottom="10.0dip" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_contact_namecard_chat_btn" android:background="#fff9f9f9" android:layout_width="fill_parent" android:layout_height="56.0dip" android:layout_weight="0.0">
+        <View android:background="@color/line" android:layout_width="fill_parent" android:layout_height="@dimen/line_height" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/free_chat" />
+            <TextView android:textSize="18.0dip" android:textColor="#ff2e8ee7" android:gravity="center" android:layout_width="wrap_content" android:layout_height="47.19998dip" android:layout_marginLeft="10.0dip" android:text="免费聊天" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

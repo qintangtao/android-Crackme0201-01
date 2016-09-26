@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/schedule_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/attendance_line" android:layout_width="fill_parent" android:layout_height="0.6dip" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_attendance_create_new" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="49.0dip">
+        <TextView android:textSize="@dimen/schedule_main_content3" android:textColor="@color/attendance_orange" android:id="@id/tv_attendance_create_list_new" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="新建考勤" android:drawableLeft="@drawable/plus_orange" android:drawablePadding="5.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </LinearLayout>
+    <View android:background="@color/attendance_line" android:layout_width="fill_parent" android:layout_height="0.6dip" />
+</LinearLayout>

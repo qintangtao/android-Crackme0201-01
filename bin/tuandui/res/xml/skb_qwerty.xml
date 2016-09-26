@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<keyboard skb_template="@xml/skb_template1" skb_cache_flag="true" qwerty="true" qwerty_uppercase="true" width="10%p" height="33.3%p" key_type="0" repeat="false" balloon="true">
+    <row>
+        <key label="Q" width="10%p" code="45" balloon_bg="@drawable/iphone_q_pressed" />
+        <keys splitter="|" labels="W|E|R|T|Y|U|I|O" codes="51|33|46|48|53|49|37|43" />
+        <key label="P" width="10%p" code="44" balloon_bg="@drawable/iphone_p_pressed" />
+    </row>
+    <row start_pos_x="4.078%p" width="10.205%p">
+        <keys splitter="|" labels="A|S|D|F|G|H|J|K|L" codes="29|47|32|34|35|36|38|39|40" />
+    </row>
+    <row width="10.205%p">
+        <key label="" width="14.286%p" balloon="false" key_type="3" code="17" />
+        <keys splitter="|" labels="Z|X|C|V|B|N|M" codes="54|52|31|50|30|42|41" />
+        <key label="" width="14.286%p" balloon="false" key_type="2" code="67" repeat="true" />
+    </row>
+</keyboard>

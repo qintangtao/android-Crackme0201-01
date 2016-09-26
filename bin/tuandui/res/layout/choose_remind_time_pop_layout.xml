@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="bottom" android:orientation="vertical" android:background="@color/pop_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/schedule_main_time1" android:textColor="@color/schedule_content" android:gravity="center_horizontal" android:id="@id/remind_time_no" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="不提醒" />
+        <TextView android:textSize="@dimen/schedule_main_time1" android:textColor="@color/schedule_content" android:gravity="center_horizontal" android:id="@id/remind_time1" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="准时" />
+        <TextView android:textSize="@dimen/schedule_main_time1" android:textColor="@color/schedule_content" android:gravity="center_horizontal" android:id="@id/remind_time2" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="10分钟" />
+        <TextView android:textSize="@dimen/schedule_main_time1" android:textColor="@color/schedule_content" android:gravity="center_horizontal" android:id="@id/remind_time3" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="30分钟" />
+        <TextView android:textSize="@dimen/schedule_main_time1" android:textColor="@color/schedule_content" android:gravity="center_horizontal" android:id="@id/remind_time4" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="1小时" />
+        <TextView android:textSize="@dimen/schedule_main_time1" android:textColor="@color/schedule_content" android:gravity="center_horizontal" android:id="@id/remind_time5" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="1天" />
+    </LinearLayout>
+</LinearLayout>

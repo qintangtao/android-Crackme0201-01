@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@drawable/group_item_selector" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/list_text_size" android:textColor="@color/black" android:ellipsize="end" android:id="@id/tv_events_child_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="以梦想的名义裹挟梦想" android:singleLine="true" />
+    <TextView android:textSize="15.0sp" android:textColor="@color/gray_third" android:ellipsize="end" android:id="@id/tv_events_child_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="阿伯次的额佛歌，和以及可乐魔呢" android:singleLine="true" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="10.0dip">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_events_person_msg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_centerVertical="true">
+            <RelativeLayout android:layout_width="20.0dip" android:layout_height="20.0dip">
+                <ImageView android:id="@id/iv_events_child_person_img" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/default_cloud_image" />
+                <ImageView android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/event_selector" />
+            </RelativeLayout>
+            <TextView android:id="@id/tv_events_child_person_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="张三" />
+        </LinearLayout>
+        <TextView android:id="@id/tv_events_child_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="18:21" android:layout_toRightOf="@id/ll_events_person_msg" android:layout_centerVertical="true" />
+        <TextView android:textColor="@color/white" android:id="@id/tv_events_child_note_msg" android:background="@drawable/img_new" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+        <TextView android:textSize="12.0sp" android:textColor="#ff8a8a8a" android:gravity="center" android:id="@id/tv_events_child_reply_msg" android:background="@drawable/reply" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</LinearLayout>

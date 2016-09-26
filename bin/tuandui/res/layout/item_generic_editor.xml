@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lzx.iteam.widget.GenericEditorView android:paddingRight="?android:scrollbarSize" android:layout_width="wrap_content" android:layout_height="wrap_content" android:baselineAligned="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="right" android:id="@id/edit_label" android:background="#00000000" android:paddingTop="15.0dip" android:layout_width="50.0dip" android:layout_height="wrap_content" android:layout_marginLeft="40.0dip" style="@style/StyleTextView" />
+    <ImageView android:id="@id/divider_row1_ver1" android:layout_width="2.0dip" android:layout_height="wrap_content" android:src="@drawable/divider" android:color="@color/black" />
+    <LinearLayout android:gravity="left" android:orientation="vertical" android:id="@id/edit_fields" android:paddingLeft="5.0dip" android:paddingTop="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:baselineAligned="false" android:layout_toRightOf="@id/edit_label" android:layout_alignWithParentIfMissing="true" />
+    <LinearLayout android:id="@id/edit_button" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true">
+        <ImageButton android:gravity="center" android:id="@id/edit_show_delete_h" android:background="@drawable/edit_contact_deleteh" android:visibility="gone" android:layout_width="30.0dip" android:layout_height="30.0dip" android:scaleType="center" />
+        <ImageButton android:gravity="center" android:id="@id/edit_show_delete_v" android:background="@drawable/edit_contact_deletev" android:visibility="gone" android:layout_width="30.0dip" android:layout_height="30.0dip" android:scaleType="center" />
+        <ImageButton android:gravity="center" android:id="@id/edit_more" android:background="@drawable/edit_contact_expand" android:visibility="gone" android:layout_width="30.0dip" android:layout_height="30.0dip" android:scaleType="center" />
+        <ImageButton android:gravity="center" android:id="@id/edit_less" android:background="@drawable/edit_contact_shrink" android:visibility="gone" android:layout_width="30.0dip" android:layout_height="30.0dip" android:scaleType="center" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:paddingLeft="5.0dip" android:paddingTop="5.0dip" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_alignParentRight="true">
+        <Button android:textColor="@color/white" android:id="@id/edit_delete" android:background="@drawable/display_group_call_log" android:visibility="gone" android:layout_width="50.0dip" android:layout_height="35.0dip" android:scaleType="center" android:text="删除" />
+    </LinearLayout>
+</com.lzx.iteam.widget.GenericEditorView>

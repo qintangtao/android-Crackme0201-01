@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/frag_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip">
+        <LinearLayout android:orientation="vertical" android:id="@id/item_ll" android:layout_width="80.0dip" android:layout_height="130.0dip" android:layout_centerInParent="true">
+            <ImageView android:id="@id/custom_iv_item" android:background="@drawable/custom_event_model" android:layout_width="70.0dip" android:layout_height="100.0dip" />
+            <TextView android:textSize="16.0dip" android:textColor="@color/black" android:gravity="center" android:id="@id/custom_tv_name" android:layout_width="80.0dip" android:layout_height="20.0dip" android:layout_marginTop="10.0dip" android:text="ddddddd" android:layout_centerHorizontal="true" />
+        </LinearLayout>
+        <ImageView android:id="@id/custom_iv_delete" android:padding="2.0dip" android:visibility="visible" android:layout_width="25.0dip" android:layout_height="25.0dip" android:src="@drawable/delete_custom_img" android:layout_toRightOf="@id/item_ll" />
+    </RelativeLayout>
+</LinearLayout>

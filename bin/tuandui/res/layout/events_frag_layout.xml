@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/rl_eventsfrag_titlebar" android:background="@color/title_bg" android:layout_width="fill_parent" android:layout_height="@dimen/title_bar_h">
+        <TextView android:textSize="@dimen/module_title" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_choose_btn" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="筛选" android:layout_alignParentLeft="true" />
+        <LinearLayout android:id="@id/event_ll_help" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerInParent="true">
+            <TextView android:textSize="@dimen/module_title" android:textColor="@color/white" android:layout_gravity="center_vertical" android:id="@id/tv_recentfrag_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/event" />
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/schedule_help" />
+        </LinearLayout>
+        <ImageView android:id="@id/iv_create_events" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/selector_add_events" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:id="@id/event_top_line" android:background="@color/group_list_driver" android:layout_width="fill_parent" android:layout_height="0.6dip" />
+    <RelativeLayout android:background="@color/frag_bg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_no_data" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ImageView android:layout_width="80.0dip" android:layout_height="80.0dip" android:src="@drawable/event_notice" />
+                <TextView android:textSize="16.0dip" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="暂无数据" />
+            </LinearLayout>
+            <ListView android:id="@id/lv_events_list" android:background="@color/white" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@null" android:cacheColorHint="@null" android:divider="@color/frag_bg" android:dividerHeight="15.0dip" android:footerDividersEnabled="false" android:overScrollMode="never" />
+            <GridView android:id="@id/gv_send_grid" android:background="@color/pop_bg" android:visibility="gone" android:fadingEdge="none" android:layoutAnimation="@anim/event_grid_item_anim" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@null" android:cacheColorHint="@null" android:numColumns="4" android:divider="@null" android:overScrollMode="never" />
+            <ListView android:id="@id/lv_choose_list" android:background="@color/pop_bg" android:visibility="gone" android:fadingEdge="none" android:layoutAnimation="@anim/event_list_item_anim" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@null" android:cacheColorHint="@null" android:divider="@null" android:overScrollMode="never" />
+        </FrameLayout>
+    </RelativeLayout>
+</LinearLayout>

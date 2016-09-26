@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/showallphoto_headview" android:background="@color/title_bg" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <TextView android:textSize="16.0dip" android:textColor="#ffffffff" android:gravity="center" android:id="@id/showallphoto_back" android:layout_width="70.0dip" android:layout_height="fill_parent" android:text="相册" android:layout_centerVertical="true" />
+        <TextView android:textSize="20.0sp" android:textColor="#ffffffff" android:id="@id/showallphoto_headtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="选择相册" android:singleLine="true" android:layout_centerInParent="true" />
+        <TextView android:textSize="16.0dip" android:textColor="#ffffffff" android:gravity="center" android:id="@id/showallphoto_cancel" android:layout_width="67.0dip" android:layout_height="fill_parent" android:text="取消" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <GridView android:id="@id/showallphoto_myGrid" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="2.0dip" android:horizontalSpacing="4.0dip" android:verticalSpacing="4.0dip" android:numColumns="4" android:layout_below="@id/showallphoto_headview" android:layout_centerInParent="true" />
+    <RelativeLayout android:id="@id/showallphoto_bottom_layout" android:background="@color/pop_bg" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentBottom="true">
+        <Button android:id="@id/showallphoto_preview" android:background="@drawable/plugin_camera_title_btn_preview" android:visibility="gone" android:layout_width="90.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="预览" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <Button android:gravity="center" android:id="@id/showallphoto_ok_button" android:background="@drawable/login_button_selector" android:layout_width="90.0dip" android:layout_height="34.0dip" android:layout_marginRight="10.0dip" android:text="完成" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ProgressBar android:id="@id/showallphoto_progressbar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+</RelativeLayout>

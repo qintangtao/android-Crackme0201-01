@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/main" android:background="@color/frag_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:textMore="http://schemas.android.com/apk/res/com.lzx.iteam">
+    <RelativeLayout android:id="@id/rl_title_bar" android:background="@color/title_bg" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_weight="0.0">
+        <LinearLayout android:gravity="center" android:id="@id/btn_back" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentLeft="true">
+            <ImageView android:background="@drawable/btn_back_selector" android:layout_width="10.0dip" android:layout_height="19.5dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/module_title" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="联系人详情" android:layout_centerInParent="true" />
+        <LinearLayout android:gravity="center" android:id="@id/detail_ll_more" android:visibility="gone" android:layout_width="50.0dip" android:layout_height="fill_parent" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/function_more" />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/contact_detail_layout" android:background="@color/white" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <View android:id="@id/top_line" android:background="@color/line" android:layout_width="fill_parent" android:layout_height="@dimen/line_height" android:layout_alignBottom="@id/rl_title_bar" />
+        <include layout="@layout/namecard_layout" />
+        <View android:background="@color/line" android:layout_width="fill_parent" android:layout_height="@dimen/line_height" />
+        <TextView android:textSize="12.0dip" android:textColor="#ff40b0fc" android:gravity="center_vertical" android:background="@color/frag_bg" android:paddingLeft="22.0dip" android:layout_width="fill_parent" android:layout_height="25.0dip" android:text="摇一摇，拨打电话" />
+        <View android:background="@color/line" android:layout_width="fill_parent" android:layout_height="@dimen/line_height" />
+        <RelativeLayout android:id="@id/contact_tm_message" android:background="@color/white" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/detail_name_text" android:textColor="@color/cloud_contact_detail_dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="1.0dip" android:text="个人信息" android:layout_centerVertical="true" />
+            <ImageView android:layout_width="10.0dip" android:layout_height="20.0dip" android:src="@drawable/selector_arrow_right" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:background="@color/line" android:layout_width="fill_parent" android:layout_height="@dimen/line_height" />
+        <LinearLayout android:orientation="vertical" android:id="@id/views" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:orientation="vertical" android:id="@id/views_website" android:background="@color/white" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:orientation="vertical" android:id="@id/views_address" android:background="@color/white" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/views_email" android:background="@color/white" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <LinearLayout android:orientation="vertical" android:id="@id/views_notes" android:background="@color/white" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_btn_chat" android:background="#fff9f9f9" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="56.0dip" android:layout_weight="0.0">
+        <View android:background="@color/line" android:layout_width="fill_parent" android:layout_height="@dimen/line_height" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/free_chat" />
+            <TextView android:textSize="18.0dip" android:textColor="#ff2e8ee7" android:gravity="center" android:layout_width="wrap_content" android:layout_height="47.19998dip" android:layout_marginLeft="10.0dip" android:text="免费聊天" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_contact_detail_note" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+        <View android:background="@color/line" android:layout_width="fill_parent" android:layout_height="@dimen/line_height" />
+        <TextView android:textSize="@dimen/detail_name_text" android:textColor="@color/cloud_contact_detail_dark" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="个人信息" />
+        <TextView android:textSize="@dimen/detail_phone_text" android:textColor="@color/cloud_contact_detail_light" android:id="@id/contact_detail_note" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="15.0dip" android:text="暂无个人信息" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/dialog_content_bg" android:layout_width="300.0dip" android:layout_height="310.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip">
+        <TextView android:textSize="16.0sp" android:textColor="@color/blue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="选择皮肤" android:layout_centerInParent="true" />
+        <Button android:id="@id/btn_exit" android:background="@drawable/edit_text_delete" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <ListView android:id="@id/skin_list" android:background="@drawable/shape_wihte_content" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="15.0dip" android:divider="#ffcccccc" android:dividerHeight="1.0dip" android:layout_weight="1.0" />
+    <Button android:textColor="@color/blue" android:id="@id/skin_shop" android:background="@drawable/selector_white_and_gray" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="15.0dip" android:text="更多皮肤.." />
+</LinearLayout>

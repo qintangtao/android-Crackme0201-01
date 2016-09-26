@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/frag_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/rl_groupfrag_titlebar" android:background="@color/title_bg" android:layout_width="fill_parent" android:layout_height="@dimen/title_bar_h" android:layout_alignParentTop="true">
+        <LinearLayout android:id="@id/contact_ll_help" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerInParent="true">
+            <TextView android:textSize="@dimen/module_title" android:textColor="@color/white" android:layout_gravity="center_vertical" android:id="@id/numbler_ext" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/contacts" />
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/schedule_help" />
+        </LinearLayout>
+        <RelativeLayout android:id="@id/btn_add_group" android:visibility="gone" android:layout_width="50.0dip" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+            <Button android:background="@drawable/add" android:layout_width="15.5dip" android:layout_height="15.5dip" android:layout_marginLeft="11.5dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <View android:id="@id/view_group_line" android:background="@color/group_list_driver" android:layout_width="fill_parent" android:layout_height="0.6dip" android:layout_below="@id/rl_groupfrag_titlebar" />
+    <ListView android:id="@id/list_cloud" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="#00000000" android:cacheColorHint="#00000000" android:divider="@null" android:dividerHeight="0.8000001dip" android:layout_below="@id/view_group_line" android:overScrollMode="never" />
+</RelativeLayout>

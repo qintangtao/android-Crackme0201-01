@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_group_create_layout" android:background="@drawable/create_group_item_selector" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:background="@color/group_list_driver" android:layout_width="fill_parent" android:layout_height="0.6dip" android:layout_marginTop="15.0dip" />
+        <TextView android:textSize="@dimen/list_text_size" android:textColor="@color/blue" android:gravity="center" android:background="@drawable/group_item_selector" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text=" + 创建新的团队" />
+        <View android:background="@color/group_list_driver" android:layout_width="fill_parent" android:layout_height="0.6dip" android:layout_marginBottom="40.0dip" />
+    </LinearLayout>
+</LinearLayout>

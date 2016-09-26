@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:layout_gravity="bottom" android:orientation="vertical" android:background="@drawable/dialog_display_bg" android:layout_width="fill_parent" android:layout_height="210.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:id="@id/order_by_frequency" android:background="@drawable/displaygroup_group_sel" android:clickable="true" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="10.0dip">
+        <TextView android:textSize="18.0sp" android:textColor="@color/Black" android:id="@id/order_by_frequency_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/order_by_frequency_string" android:drawablePadding="5.0dip" />
+        <ImageView android:id="@id/image_frequency_select" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginLeft="5.0dip" android:src="@drawable/check_mark_bulksms" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:id="@id/order_by_name" android:background="@drawable/displaygroup_group_sel" android:clickable="true" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="10.0dip">
+        <TextView android:textSize="18.0sp" android:textColor="@color/Black" android:id="@id/order_by_name_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/order_by_name_string" android:drawablePadding="5.0dip" />
+        <ImageView android:id="@id/image_name_select" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginLeft="5.0dip" android:src="@drawable/check_mark_bulksms" />
+    </LinearLayout>
+    <Button android:textSize="18.0sp" android:textColor="@color/white" android:id="@id/order_cancel" android:background="@drawable/displaygroup_group_cancel" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="20.0dip" android:text="@string/cancel" />
+</LinearLayout>

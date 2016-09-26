@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/my_setting_ll" android:background="@color/frag_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/structure_normal" android:background="@color/title_bg" android:layout_width="fill_parent" android:layout_height="@dimen/title_bar_h">
+        <TextView android:textSize="@dimen/module_title" android:textColor="@color/white" android:id="@id/tv_structure_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="注册成功" android:layout_centerInParent="true" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/register_ok" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="完成" android:includeFontPadding="false" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ScrollView style="@style/MyScrollViewStyle">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <FrameLayout android:layout_width="80.0dip" android:layout_height="80.0dip" android:layout_marginTop="20.0dip">
+                <ImageView android:id="@id/register_my_photo" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/default_cloud_image" />
+                <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/mask_user" />
+            </FrameLayout>
+            <TextView android:textSize="18.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:text="设置头像" />
+            <View android:background="@color/line" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="20.0dip" />
+            <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <EditText android:textSize="18.0dip" android:gravity="center_vertical" android:id="@id/register_my_name" android:background="@color/white" android:paddingLeft="20.0dip" android:layout_width="fill_parent" android:layout_height="46.0dip" android:hint="设置姓名" />
+                <View android:background="@color/line" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="20.0dip" />
+                <EditText android:textSize="18.0dip" android:gravity="center_vertical" android:id="@id/register_my_company" android:background="@color/white" android:paddingLeft="20.0dip" android:layout_width="fill_parent" android:layout_height="46.0dip" android:hint="设置公司" />
+                <View android:background="@color/line" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="20.0dip" />
+                <EditText android:textSize="18.0dip" android:gravity="center_vertical" android:id="@id/register_my_organization" android:background="@color/white" android:paddingLeft="20.0dip" android:layout_width="fill_parent" android:layout_height="46.0dip" android:hint="设置职位" />
+            </LinearLayout>
+            <View android:background="@color/line" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <TextView android:textSize="16.0dip" android:textColor="@color/black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="18.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="300.0dip" android:text="@string/register_notice" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

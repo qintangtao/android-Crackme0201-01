@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:background="@color/title_bg" android:layout_width="fill_parent" android:layout_height="@dimen/title_bar_h">
+        <LinearLayout android:gravity="center" android:id="@id/draft_ll_back" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentLeft="true">
+            <ImageView android:background="@drawable/btn_back_selector" android:layout_width="10.0dip" android:layout_height="19.5dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/draft_ll_help" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerInParent="true">
+            <TextView android:textSize="@dimen/module_title" android:textColor="@color/white" android:layout_gravity="center_vertical" android:id="@id/draft_tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/draft_title" android:layout_centerVertical="true" />
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/schedule_help" />
+        </LinearLayout>
+    </RelativeLayout>
+    <View android:background="@color/line" android:layout_width="fill_parent" android:layout_height="0.6dip" />
+    <ListView android:id="@id/draft_lv_list" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@null" android:cacheColorHint="@null" android:divider="@color/line" android:dividerHeight="0.8000001dip" />
+</LinearLayout>

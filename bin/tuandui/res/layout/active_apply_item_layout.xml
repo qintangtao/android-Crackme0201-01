@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <FrameLayout android:id="@id/active_item_fl_image" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_centerVertical="true">
+            <ImageView android:id="@id/active_item_image" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/default_cloud_image" />
+            <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/iv_mask_gray_selector" />
+        </FrameLayout>
+        <TextView android:textSize="14.0dip" android:textColor="#ff535353" android:gravity="center_vertical" android:id="@id/active_item_name" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:text="fff" android:layout_toRightOf="@id/active_item_fl_image" />
+        <TextView android:textSize="14.0dip" android:textColor="#ff999999" android:gravity="center_vertical" android:id="@id/active_item_phone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="20.0dip" android:text="fff" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:background="@drawable/group_item_selector" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="60.0dip">
+        <RelativeLayout android:layout_gravity="center_vertical" android:id="@id/cloud_group_list_img" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+            <ImageView android:id="@id/group_type" android:layout_width="43.0dip" android:layout_height="43.0dip" android:src="@drawable/default_cloud_image" android:scaleType="fitXY" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/qrcode_head_mask" android:visibility="visible" android:layout_width="43.0dip" android:layout_height="43.0dip" android:src="@drawable/iv_mask_gray_selector" android:scaleType="fitXY" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/cloud_group_select" android:layout_toRightOf="@id/cloud_group_list_img" android:layout_centerVertical="true">
+            <TextView android:textSize="@dimen/list_text_size" android:textColor="@color/black" android:ellipsize="end" android:id="@id/group_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="公司号码簿" android:maxEms="9" android:singleLine="true" />
+            <TextView android:textSize="15.0sp" android:textColor="@color/gray_third" android:ellipsize="end" android:id="@id/group_use_msg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="253个联系人（123人在用）" android:maxEms="13" android:singleLine="true" />
+        </LinearLayout>
+        <ImageView android:id="@id/cloud_group_select" android:visibility="visible" android:layout_width="18.0dip" android:layout_height="15.0dip" android:layout_marginRight="20.0dip" android:src="@drawable/select_icon" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:id="@id/qrcode_mask" android:background="@color/cloud_mask" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="60.0dip" />
+</RelativeLayout>

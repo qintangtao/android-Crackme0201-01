@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/globle_view" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/keybord_container" android:background="@color/transbg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textColor="#ffffff33" android:gravity="center" android:id="@id/main_title_text" android:background="@color/black" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="25.0dip" />
+        <FrameLayout android:id="@id/main_title" android:background="@color/transbg" android:layout_width="fill_parent" android:layout_height="@dimen/title_bar_h">
+            <include android:layout_gravity="center_vertical" android:id="@id/title_bar_normal_mode" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/keyboard_title_bar" />
+            <include android:layout_gravity="center_vertical" android:id="@id/title_bar_select_mode" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/title_bar_select_mode" />
+        </FrameLayout>
+        <com.lzx.iteam.widget.BottomFrameLayout android:id="@id/bottom_keybord_layout" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <com.lzx.iteam.widget.ContactInfoActionButtonsLayout android:orientation="horizontal" android:id="@id/mainLayout" android:background="@color/transbg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <FrameLayout android:id="@id/keypad_vert_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="153.0" />
+                <View android:background="@color/gray" android:layout_width="0.5dip" android:layout_height="fill_parent" />
+                <FrameLayout android:tag="listview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="171.0">
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <LinearLayout android:orientation="vertical" android:id="@id/ll_batck_opertion" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <com.lzx.iteam.widget.TwiceTextChoiceView android:id="@id/ttc_select" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                            <View android:background="#99b2b2b2" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                            <LinearLayout android:orientation="horizontal" android:id="@id/select_all_layout" android:background="#fff9f9f9" android:layout_width="fill_parent" android:layout_height="38.0dip">
+                                <LinearLayout android:orientation="horizontal" android:id="@id/select_all" android:layout_width="wrap_content" android:layout_height="38.0dip">
+                                    <CheckBox android:layout_gravity="center_vertical" android:id="@id/cb_slect_all" android:clickable="false" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginLeft="12.0dip" style="@style/custom_checkbox_bulksms" />
+                                    <TextView android:textSize="18.0sp" android:textColor="@color/black" android:gravity="center" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="2.0dip" android:text="全选" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                            <ListView android:id="@id/contactslist" android:background="@color/group_list_back" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@null" android:cacheColorHint="@null" android:overScrollMode="never" />
+                            <TextView android:textSize="18.0dip" android:textColor="@color/black" android:id="@id/tv_null" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="无成员" android:layout_centerInParent="true" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <ImageView android:layout_gravity="left" android:id="@id/left_shadow" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="fill_parent" />
+                    <ImageView android:layout_gravity="right" android:id="@id/right_shadow" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="fill_parent" />
+                </FrameLayout>
+            </com.lzx.iteam.widget.ContactInfoActionButtonsLayout>
+            <ImageView android:layout_gravity="bottom" android:id="@id/hshadow" android:background="@color/black" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="20.0dip" />
+            <FrameLayout android:id="@id/keypad_hori_container" android:background="@color/transparent" android:visibility="visible" android:layout_width="320.0dip" android:layout_height="wrap_content" />
+        </com.lzx.iteam.widget.BottomFrameLayout>
+    </LinearLayout>
+    <ImageView android:id="@id/slip_key" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/help_slip_key1" android:scaleType="centerCrop" />
+    <ImageView android:id="@id/structure_add" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/help_structure_add" android:scaleType="centerCrop" />
+    <ImageView android:id="@id/structure_edit" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/help_structure_edit" android:scaleType="centerCrop" />
+</FrameLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/container_cloud_fenzu" android:background="@color/popup_view_background_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <WebView android:id="@id/web_fenzu" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <TextView android:textSize="20.0sp" android:textColor="@color/black" android:id="@id/tv_error" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="网络运行异常！" android:layout_centerInParent="true" />
+</RelativeLayout>

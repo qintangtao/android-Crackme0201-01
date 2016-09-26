@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="bottom" android:layout_gravity="bottom" android:orientation="vertical" android:background="#ffe9e9e9" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="@color/click_blue" android:gravity="center" android:id="@id/choose_img_by_storage" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="照片图库" />
+    <View android:background="@color/group_list_driver" android:layout_width="fill_parent" android:layout_height="0.8000001dip" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/click_blue" android:gravity="center" android:id="@id/choose_img_by_camera" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="拍照" />
+    <View android:background="@color/group_list_driver" android:layout_width="fill_parent" android:layout_height="0.8000001dip" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/gray_third" android:gravity="center" android:id="@id/choose_img_cancle" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="取消" />
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.lzx.iteam.widget.MyRelativeView android:layout_gravity="center" android:id="@id/container_mingpian" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.lzx.iteam.widget.MyImageVIew android:id="@id/dimension_code" android:background="@drawable/no_dimension" android:clickable="true" android:layout_width="@dimen/dimension_code_h_w" android:layout_height="@dimen/dimension_code_h_w" android:scaleType="fitCenter" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="14.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="我的二维码名片" android:layout_below="@id/dimension_code" android:layout_centerHorizontal="true" />
+    </com.lzx.iteam.widget.MyRelativeView>
+</FrameLayout>

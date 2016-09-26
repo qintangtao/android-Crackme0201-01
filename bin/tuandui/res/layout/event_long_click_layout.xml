@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center" android:background="@drawable/long_click_pop_blow_back" android:layout_width="120.0dip" android:layout_height="50.0dip">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginTop="4.0dip">
+            <TextView android:textSize="16.0dip" android:textColor="@color/white" android:gravity="center" android:id="@id/event_content_copy" android:layout_width="50.0dip" android:layout_height="fill_parent" android:text="复制" />
+            <View android:background="@color/white" android:layout_width="0.6dip" android:layout_height="20.0dip" />
+            <TextView android:textSize="16.0dip" android:textColor="@color/white" android:gravity="center" android:id="@id/event_content_share" android:layout_width="50.0dip" android:layout_height="fill_parent" android:text="转发" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

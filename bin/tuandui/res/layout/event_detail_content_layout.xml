@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/even_rl_head" android:background="@color/title_bg" android:layout_width="fill_parent" android:layout_height="@dimen/title_bar_h" android:layout_alignParentTop="true">
+        <LinearLayout android:gravity="center" android:id="@id/even_ll_back" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentLeft="true">
+            <ImageView android:background="@drawable/btn_back_selector" android:layout_width="10.0dip" android:layout_height="19.5dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/module_title" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="详情" android:layout_centerInParent="true" />
+        <TextView android:textSize="@dimen/module_title" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/even_tv_member" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="成员" android:includeFontPadding="false" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <View android:background="#ffbababa" android:layout_width="fill_parent" android:layout_height="0.8000001dip" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <WebView android:id="@id/event_detail_web_view" android:padding="5.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/even_rl_head" />
+    <ListView android:id="@id/even_lv_reply" android:background="@color/white" android:visibility="gone" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@null" android:cacheColorHint="@null" android:divider="@null" android:layout_above="@id/even_ll_bottom" android:layout_below="@id/even_rl_head" android:overScrollMode="never" />
+    <LinearLayout android:orientation="vertical" android:id="@id/even_ll_bottom" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <View android:background="@color/line" android:layout_width="fill_parent" android:layout_height="0.6dip" />
+        <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/chat_input" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="45.0dip">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/chat_input" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="45.0dip" android:layout_toLeftOf="@id/even_tv_input_send">
+                <LinearLayout android:gravity="center_vertical" android:background="@drawable/pic_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="4.0dip">
+                    <EditText android:id="@id/even_et_input" android:background="@null" android:paddingLeft="6.0dip" android:paddingTop="4.0dip" android:paddingRight="6.0dip" android:paddingBottom="4.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minHeight="33.0dip" android:hint="回复" android:maxLines="3" android:layout_weight="5.0" />
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:src="@drawable/ver_line" />
+                    <ImageView android:id="@id/iv_list_emotion" android:paddingLeft="5.0dip" android:paddingTop="2.0dip" android:paddingRight="5.0dip" android:paddingBottom="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/chat_emotion_selector" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/even_tv_input_send" android:background="@drawable/selector_send_bule_bg" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="32.0dip" android:layout_marginRight="10.0dip" android:text="发送" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:background="@color/line" android:layout_width="fill_parent" android:layout_height="0.6dip" />
+        <LinearLayout android:orientation="vertical" android:id="@id/even_list_emotion" android:background="@color/chat_input" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <android.support.v4.view.ViewPager android:layout_gravity="center" android:id="@id/even_list_emotion_viewpager" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="170.0dip" />
+            <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/even_list_emotion_dots_container" android:layout_width="fill_parent" android:layout_height="20.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+    <ScrollView android:id="@id/event_sv_other" android:visibility="visible" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/even_rl_head" android:overScrollMode="never">
+        <LinearLayout android:orientation="vertical" android:background="@color/frag_bg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include android:id="@id/event_head_layout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/even_rl_head" layout="@layout/all_event_head_layout" />
+            <include android:id="@id/layout_announcement" android:visibility="gone" layout="@layout/event_announcement_layout" />
+            <include android:id="@id/layout_active" android:visibility="gone" layout="@layout/event_active_layout" />
+            <include android:id="@id/layout_vote" android:visibility="gone" layout="@layout/event_vote_layout" />
+            <include android:id="@id/layout_reg" android:visibility="gone" layout="@layout/event_reg_layout" />
+            <include layout="@layout/share_layout" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

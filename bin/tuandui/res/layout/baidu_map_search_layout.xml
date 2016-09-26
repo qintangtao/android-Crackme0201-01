@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:background="@color/schedule_bg" android:layout_width="fill_parent" android:layout_height="60.0dip">
+        <LinearLayout android:gravity="center_vertical" android:background="@drawable/edit_input" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:layout_weight="5.0">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/search_icon" />
+            <EditText android:textSize="@dimen/schedule_detail_remark" android:textColor="@color/schedule_content" android:textColorHint="@color/schedule_manager_no_data" android:id="@id/et_map_search_input" android:background="@drawable/edit_input" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:hint="搜索位置" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/schedule_detail_remark" android:textColor="@color/attendance_orange" android:gravity="center" android:id="@id/tv_map_search_input_cancle" android:background="@null" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="取消" android:layout_weight="1.0" />
+    </LinearLayout>
+    <View android:background="@color/line" android:layout_width="fill_parent" android:layout_height="0.6dip" />
+    <ListView android:id="@id/lv_baidu_map_search_list" android:background="@color/white" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@null" android:cacheColorHint="@null" android:divider="@color/schedule_line2" android:dividerHeight="0.6dip" android:overScrollMode="never" />
+</LinearLayout>

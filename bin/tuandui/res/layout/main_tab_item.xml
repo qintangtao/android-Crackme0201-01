@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="34.0dip">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/recent_image" android:layout_width="34.0dip" android:layout_height="34.0dip" android:src="@drawable/shijian_normal" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/all_event_unread_msg" android:background="@drawable/unread_1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="3" android:layout_centerVertical="true" />
+    </FrameLayout>
+    <TextView android:textSize="11.0sp" android:textColor="@color/gray" android:layout_gravity="center_horizontal" android:id="@id/recent_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/event" android:includeFontPadding="false" />
+</LinearLayout>

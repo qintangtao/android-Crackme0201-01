@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/schedule_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:background="@color/title_bg" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <LinearLayout android:gravity="center" android:id="@id/ll_attendance_devices_back" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentLeft="true">
+            <ImageView android:background="@drawable/btn_back_selector" android:layout_width="10.0dip" android:layout_height="19.5dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/module_title" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="签到异常" android:layout_centerInParent="true" />
+        <View android:background="@color/schedule_line" android:layout_width="fill_parent" android:layout_height="@dimen/line_height" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/schedule_main_time1" android:textColor="@color/schedule_create_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="17.0dip" android:layout_marginTop="15.0dip" android:text="异常签到设备" />
+            <View android:background="@color/attendance_line1" android:layout_width="fill_parent" android:layout_height="@dimen/line_height" android:layout_marginTop="6.0dip" />
+            <RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toLeftOf="@id/tv_attendance_devices_state">
+                    <TextView android:textSize="@dimen/schedule_main_content2" android:textStyle="bold" android:textColor="@color/schedule_content" android:id="@id/tv_attendance_error_devices_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="17.0dip" android:text="xxxxxx" />
+                    <TextView android:textSize="@dimen/attendance_small" android:textColor="@color/schedule_create_time" android:id="@id/tv_attendance_error_devices_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="17.0dip" android:layout_marginTop="9.0dip" android:text="设备号：xxxxxxxxx" />
+                </LinearLayout>
+                <TextView android:textSize="@dimen/schedule_main_content1" android:textColor="@color/schedule_content" android:gravity="center_vertical" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="未绑定设备" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <View android:background="@color/attendance_line1" android:layout_width="fill_parent" android:layout_height="@dimen/line_height" />
+            <TextView android:textSize="@dimen/schedule_main_time1" android:textStyle="bold" android:textColor="@color/schedule_create_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="17.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="17.0dip" android:text="本次打卡使用设备是非绑定设备。" android:drawableLeft="@drawable/event_iv_note" android:drawablePadding="3.0dip" />
+            <TextView android:textSize="@dimen/schedule_main_time1" android:textColor="@color/schedule_create_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="17.0dip" android:layout_marginTop="30.0dip" android:text="绑定设备" />
+            <View android:background="@color/attendance_line1" android:layout_width="fill_parent" android:layout_height="@dimen/line_height" android:layout_marginTop="6.0dip" />
+            <RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toLeftOf="@id/tv_attendance_devices_state">
+                    <TextView android:textSize="@dimen/schedule_main_content2" android:textStyle="bold" android:textColor="@color/schedule_content" android:id="@id/tv_attendance_devices_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="17.0dip" android:text="xxxxxx" />
+                    <TextView android:textSize="@dimen/attendance_small" android:textColor="@color/schedule_create_time" android:id="@id/tv_attendance_devices_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="17.0dip" android:layout_marginTop="9.0dip" android:text="设备号：xxxxxxxxx" />
+                </LinearLayout>
+                <TextView android:textSize="@dimen/schedule_main_content1" android:textColor="@color/schedule_content" android:gravity="center_vertical" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="绑定设备" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

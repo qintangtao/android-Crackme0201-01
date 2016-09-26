@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/searchContactItem" android:background="@drawable/contact_item_selector" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/search_contact_left_part" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/composer_header" android:layout_centerVertical="true">
+        <ImageView android:layout_gravity="top" android:visibility="invisible" android:layout_width="12.0dip" android:layout_height="12.0dip" android:scaleType="centerInside" />
+        <CheckBox android:layout_gravity="center_vertical" android:id="@id/isSel" android:visibility="gone" android:clickable="false" android:layout_width="35.0dip" android:layout_height="35.0dip" style="@style/custom_checkbox_bulksms" />
+        <FrameLayout android:visibility="visible" android:layout_width="@dimen/contact_head" android:layout_height="@dimen/contact_head">
+            <com.lzx.iteam.widget.RoundImageView android:layout_gravity="center_vertical" android:id="@id/quickContact" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/default_cloud_image" />
+            <ImageView android:id="@id/contact_disturb_status" android:visibility="visible" android:layout_width="14.0dip" android:layout_height="14.0dip" android:layout_marginLeft="26.0dip" android:layout_marginTop="26.0dip" android:src="@drawable/status_dot" />
+        </FrameLayout>
+    </LinearLayout>
+    <include android:id="@id/composer_header" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/item_composer_header" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/list_body" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:descendantFocusability="blocksDescendants" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/search_contact_left_part" android:layout_below="@id/composer_header" android:layout_alignParentRight="true" android:layout_alignWithParentIfMissing="true">
+        <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginTop="4.0dip">
+            <TextView android:textSize="20.0sp" android:textColor="@color/Black" android:ellipsize="end" android:id="@id/search_contact_name" android:paddingLeft="@dimen/search_contact_item_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:maxLength="4" android:layout_toLeftOf="@id/iv_invite_icon" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="8.0sp" android:textColor="@color/blue" android:gravity="top" android:id="@id/contact_count" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="3.0dip" android:text="ss" android:layout_toLeftOf="@id/iv_invite_icon" android:layout_toRightOf="@id/search_contact_name" android:layout_alignTop="@id/search_contact_name" />
+            <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/search_contact_item_padding" android:paddingRight="@dimen/search_contact_item_padding" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" android:layout_below="@id/search_contact_name">
+                <TextView android:textColor="#ff777777" android:ellipsize="end" android:id="@id/organizational" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="20" />
+                <TextView android:textColor="#ffaaaaaa" android:ellipsize="end" android:id="@id/search_contact_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="20" />
+            </LinearLayout>
+            <ImageView android:id="@id/iv_invite_icon" android:paddingRight="10.0dip" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/selector_invite" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/wx_icon" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:background="@color/line" android:layout_width="fill_parent" android:layout_height="@dimen/line_height" android:layout_below="@id/list_body" />
+</RelativeLayout>

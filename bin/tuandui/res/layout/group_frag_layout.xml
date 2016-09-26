@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fff0eff5" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/group_list_title" layout="@layout/group_frag_title" />
+    <View android:background="@color/group_list_driver" android:layout_width="fill_parent" android:layout_height="0.39999998dip" />
+    <ListView android:id="@id/lv_crete_group_list" android:background="@color/group_list_back" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@null" android:cacheColorHint="@null" android:divider="@color/group_list_driver" android:dividerHeight="0.6dip" android:overScrollMode="never" />
+    <View android:background="@color/group_list_driver" android:layout_width="fill_parent" android:layout_height="0.8000001dip" />
+</LinearLayout>

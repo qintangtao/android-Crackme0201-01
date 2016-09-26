@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.lzx.iteam">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="88.0dip">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="12.0dip" android:layout_height="fill_parent" android:layout_marginLeft="15.0dip">
+            <View android:id="@id/ap_lv_line_top" android:background="@color/line" android:layout_width="1.0dip" android:layout_height="20.0dip" />
+            <ImageView android:id="@id/ap_lv_iv_mid" android:layout_width="12.0dip" android:layout_height="12.0dip" android:src="@drawable/ap_item_pass_iv" />
+            <View android:id="@id/ap_lv_line_botton" android:background="@color/line" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        </LinearLayout>
+        <RelativeLayout android:background="@drawable/ap_item_state_bg" android:layout_width="fill_parent" android:layout_height="68.0dip" android:layout_marginLeft="5.0dip" android:layout_marginTop="19.0dip" android:layout_marginRight="20.0dip">
+            <com.lzx.iteam.widget.RoundImageView android:id="@id/ap_iv_item_head" android:background="@drawable/sms_on" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="18.0dip" android:layout_centerVertical="true" app:radius="20.0dip" />
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/ap_iv_item_head" android:layout_centerVertical="true">
+                <TextView android:textSize="16.0dip" android:textColor="@color/schedule_content" android:id="@id/ap_item_tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+                <TextView android:textSize="15.0dip" android:textColor="@color/ap_detail_pass" android:id="@id/ap_item_tv_state" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="通过" />
+            </LinearLayout>
+            <TextView android:textSize="14.0dip" android:textColor="@color/schedule_create_time" android:gravity="right" android:id="@id/ap_item_tv_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="2016-3-3" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

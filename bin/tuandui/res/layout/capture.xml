@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <SurfaceView android:id="@id/preview_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.lzx.iteam.dimensioncode.ViewfinderView android:id="@id/viewfinder_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:layout_gravity="center" android:id="@id/scanning_icons" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/iv_camera_diy_circle" android:background="@drawable/bar_code_center" android:layout_width="260.0dip" android:layout_height="260.0dip" android:layout_marginTop="15.0dip" android:scaleType="fitXY" android:layout_centerInParent="true" />
+        <ProgressBar android:id="@id/pg_camera_diy" android:layout_width="247.0dip" android:layout_height="247.0dip" android:indeterminate="true" android:indeterminateDrawable="@drawable/qrcode_progress" android:layout_centerInParent="true" style="@style/CustomProgressStyle" />
+        <ImageView android:id="@id/iv_camera_diy_corner" android:background="@drawable/bar_code_four_corner" android:layout_width="280.0dip" android:layout_height="280.0dip" />
+    </RelativeLayout>
+    <TextView android:textColor="@color/status_text" android:layout_gravity="bottom|center" android:id="@id/status_view" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/msg_default_status" />
+</FrameLayout>

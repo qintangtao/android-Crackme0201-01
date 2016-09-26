@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/group_item_selector" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+        <TextView android:textSize="@dimen/list_text_size" android:textColor="@color/black" android:ellipsize="end" android:id="@id/group_choose_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="公司号码簿" android:maxEms="9" android:singleLine="true" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/gray_third" android:ellipsize="end" android:id="@id/group_choose_use_msg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="253个联系人（123人在用）" android:maxEms="13" android:singleLine="true" />
+    </LinearLayout>
+</RelativeLayout>
