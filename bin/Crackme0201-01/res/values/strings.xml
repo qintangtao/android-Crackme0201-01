@@ -4,7 +4,7 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="login_user">用户名</string>
-    <string name="login_pwd">注册码</string>
+    <string name="login_pwd">密码</string>
     <string name="unsuccessed">无效用户或者注册码</string>
     <string name="successed">注册成功</string>
 </resources>
